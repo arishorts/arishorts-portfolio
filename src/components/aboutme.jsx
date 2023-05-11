@@ -4,7 +4,7 @@ import React from "react";
 const AboutMe = () => {
   return (
     <div className="container-fluid pt-5 pb-5 px-5" id="aboutme">
-      <h1 className="text-center mt-3">About Me</h1>
+      <h2 className="text-center mt-3 aboutme-header">About Me</h2>
 
       <picture className="row justify-content-center">
         {/* <motion.div
@@ -30,7 +30,7 @@ const AboutMe = () => {
         />
         {/* </motion.div> */}
       </picture>
-      <section className="fs-5">
+      <section className="fs-5 aboutme-content">
         <p className="pt-3">
           Im Ariel Schwartz, a Full Stack Developer with a passion for building
           beautiful and functional web applications. Welcome to my portfolio! 🚀

@@ -12,6 +12,11 @@ const TextField = ({ name, label, error, ...rest }) => {
         id={name}
         className="form-control"
         rows="7"
+        style={{
+          backgroundColor: "var(--color-desert-brown)",
+          border: "3px solid var(--color-turquoise-blue)",
+          color: "var(--color-sand)",
+        }}
       />
       {error && <div className="alert alert-danger">{error}</div>}
     </div>

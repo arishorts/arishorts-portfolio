@@ -3,7 +3,7 @@ import React from "react";
 // import { Route, Routes } from "react-router-dom";
 // import NavBar from "./components/common/navbar";
 // import NotFound from "./components/notFound";
-import ContactMe from "./components/contactMe";
+import ContactMe from "./components/contactme";
 import Portfolio from "./components/portfolio";
 import AboutMe from "./components/aboutme";
 import Resume from "./components/resume";
@@ -12,7 +12,7 @@ import Header from "./components/common/header";
 function App() {
   return (
     <React.Fragment>
-      <main>
+      <main className="main-container">
         <Header />
         <div id="top"></div>
         <AboutMe />

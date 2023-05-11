@@ -9,15 +9,15 @@ const Header = () => {
         className="header-container row p-0 m-0"
         style={{ position: "fixed", width: "100%" }}
       >
-        <div className="col-2 ">
+        <div className="col-2">
           {/* <NavLink className="navbar-brand" to="/">
             Ariel
           </NavLink> */}
 
           <a
             href="#top"
-            className="h1"
-            style={{ textDecoration: "none", color: "white" }}
+            className="h1 header-brand"
+            style={{ textDecoration: "none" }}
           >
             Ariel.
           </a>

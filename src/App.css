@@ -9,8 +9,82 @@
   --color-sunset-purple: #7d4e5f;
 }
 
+a {
+  text-decoration: "none";
+}
+
+.main-container {
+  background-color: var(--color-desert-brown);
+}
+
 .header-container {
-  background-color: var(--color-sky-blue);
+  background-color: var(--color-canyon-red);
+}
+
+.header-brand,
+.navbar-item {
+  text-decoration: "none";
+  color: var(--color-sand);
+}
+
+.aboutme-content {
+  color: var(--color-sand);
+}
+
+.aboutme-header {
+  color: var(--color-turquoise-blue);
+}
+
+.portfolio-header {
+  color: var(--color-turquoise-blue);
+}
+
+.resume-header {
+  color: var(--color-sand);
+}
+
+.resume-span {
+  color: var(--color-turquoise-blue);
+}
+
+.resume-subheader {
+  color: var(--color-sand);
+}
+
+.resume-column {
+  border-left: 2px solid var(--color-turquoise-blue);
+}
+
+.resume-card {
+  border: 2px solid var(--color-turquoise-blue);
+}
+
+.card-container {
+  color: var(--color-turquoise-blue);
+}
+
+.card-content {
+  color: var(--color-sand);
+}
+
+.contactme-header {
+  color: var(--color-turquoise-blue);
+}
+
+.form-label {
+  color: var(--color-sand);
+}
+
+.form-control {
+  background-color: var(--color-sand);
+}
+
+#contactme-button {
+  background-color: var(--color-turquoise-blue);
+  color: var(--color-canyon-red);
+  border: 2px solid var(--color-canyon-red);
+  font-weight: 600;
+  width: 30%;
 }
 
 @media (prefers-reduced-motion: no-preference) {

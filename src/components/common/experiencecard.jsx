@@ -3,8 +3,8 @@ import { BiCalendar } from "react-icons/bi";
 
 const ExperienceCard = ({ name, summary, date }) => {
   return (
-    <div className="card-content">
-      <div className="content">
+    <div className="card-content card-container">
+      <div className="card-content">
         <div className="year">
           <BiCalendar /> {date}
         </div>

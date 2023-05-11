@@ -46,19 +46,16 @@ class Resume extends Component {
     return (
       <React.Fragment>
         <div id="resume" className="p-5 my-5 container-fluid ">
-          <h2 className="heading px-5 py-2 text-center" id="resume">
-            My <span>Journey</span>
+          <h2 className="resume-header px-5 py-2 text-center" id="resume">
+            My <span className="resume-span">Journey</span>
           </h2>
 
           <div className="row g-5">
             <div className="col-md-6">
-              <h3 className="text-center">Experience</h3>
-              <div
-                className="row px-5"
-                style={{ borderLeft: "2px solid black" }}
-              >
+              <h3 className="text-center resume-subheader">Experience</h3>
+              <div className="row px-5 resume-column">
                 {this.state.experience.map((exp, index) => (
-                  <div className="col-12 border my-2" key={index}>
+                  <div className="col-12 my-2 resume-card" key={index}>
                     <ExperienceCard
                       name={exp.name}
                       summary={exp.summary}
@@ -69,14 +66,11 @@ class Resume extends Component {
               </div>
             </div>
 
-            <div className="col-md-6 border-left border-2">
-              <h3 className="text-center">Education</h3>
-              <div
-                className="row px-5"
-                style={{ borderLeft: "2px solid black" }}
-              >
+            <div className="col-md-6">
+              <h3 className="text-center resume-subheader">Education</h3>
+              <div className="row px-5 resume-column">
                 {this.state.education.map((edu, index) => (
-                  <div className="col-12 border my-2" key={index}>
+                  <div className="col-12 my-2 resume-card" key={index}>
                     <ExperienceCard
                       name={edu.name}
                       summary={edu.summary}
@@ -86,19 +80,6 @@ class Resume extends Component {
                 ))}
               </div>
             </div>
-          </div>
-
-          <div className="text-center mt-3">
-            Highly organized and skilled in:
-            <ul>
-              <li>
-                Front End : HTML, CSS, JavaScript, jQuery, Handlebars,
-                Bootstrap, React, Webpack
-              </li>
-              <li>Back End : Node.js, Express, Jest</li>
-              <li>Database : MySQL, Sequelize, MongoDB, Mongoose</li>
-              <li>Deployment : Heroku</li>
-            </ul>
           </div>
         </div>
       </React.Fragment>

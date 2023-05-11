@@ -3,10 +3,11 @@ import React from "react";
 const Portfolio = () => {
   return (
     <React.Fragment>
-      <div className="container-fluid">
-        <div id="portfolio" className="p-5 my-5">
-          <h1 className="text-center">Portfolio</h1>
-        </div>
+      <div
+        id="portfolio"
+        className="container-fluid portfolio-container p-5 my-5"
+      >
+        <h2 className="text-center portfolio-header">Portfolio</h2>
       </div>
     </React.Fragment>
   );

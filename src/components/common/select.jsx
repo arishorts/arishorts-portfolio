@@ -7,7 +7,17 @@ const Select = ({ name, label, error, options, ...rest }) => {
         {label}
       </label>
       <div className="input-group mb-3">
-        <select name={name} id={name} {...rest} className="form-select">
+        <select
+          name={name}
+          id={name}
+          {...rest}
+          className="form-select"
+          style={{
+            backgroundColor: "var(--color-desert-brown)",
+            border: "3px solid var(--color-turquoise-blue)",
+            color: "var(--color-sand)",
+          }}
+        >
           <option value=""></option>
           {options.map((option) => (
             <option key={option._id} value={option._id}>

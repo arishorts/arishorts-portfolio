@@ -18,61 +18,51 @@ const NavBar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav">
-              <li className="nav-item mx-3">
+            <ul className="navbar-nav ">
+              <li className="nav-item  mx-3">
                 <a
                   href="#top"
-                  style={{ textDecoration: "none", color: "white" }}
+                  style={{ textDecoration: "none" }}
+                  className="navbar-item"
                 >
                   Home
                 </a>
-                {/* <NavLink className="nav-link" to="/home">
-                  Home
-                </NavLink> */}
               </li>
               <li className="nav-item mx-3">
                 <a
                   href="#aboutme"
-                  style={{ textDecoration: "none", color: "white" }}
+                  style={{ textDecoration: "none" }}
+                  className="navbar-item"
                 >
                   About Me
                 </a>
-                {/* <NavLink className="nav-link" to="/aboutme">
-                  About Me
-                </NavLink> */}
               </li>
               <li className="nav-item mx-3">
                 <a
                   href="#portfolio"
-                  style={{ textDecoration: "none", color: "white" }}
+                  style={{ textDecoration: "none" }}
+                  className="navbar-item"
                 >
                   Portfolio
                 </a>
-                {/* <NavLink className="nav-link" to="/home">
-                  Home
-                </NavLink> */}
               </li>
               <li className="nav-item mx-3">
                 <a
                   href="#resume"
-                  style={{ textDecoration: "none", color: "white" }}
+                  style={{ textDecoration: "none" }}
+                  className="navbar-item"
                 >
                   Resume
                 </a>
-                {/* <NavLink className="nav-link" to="/resume">
-                  Resume
-                </NavLink> */}
               </li>
               <li className="nav-item mx-3">
                 <a
                   href="#contactme"
-                  style={{ textDecoration: "none", color: "white" }}
+                  style={{ textDecoration: "none" }}
+                  className="navbar-item"
                 >
                   Contact Me
                 </a>
-                {/* <NavLink className="nav-link" to="/contactme">
-                  Contact Me
-                </NavLink> */}
               </li>
             </ul>
           </div>

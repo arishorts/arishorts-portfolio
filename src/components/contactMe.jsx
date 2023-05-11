@@ -32,9 +32,12 @@ class ContactMe extends Form {
     return (
       <React.Fragment>
         <div className="container-fluid">
-          <div className="my-5 row justify-content-center" id="contactme">
-            <h1 className="text-center">Contact Me</h1>
-            <form className="col-md-7 col-10" onSubmit={this.handleSubmit}>
+          <div className="mt-5 pb-5 row justify-content-center" id="contactme">
+            <h2 className="text-center contactme-header">Contact Me</h2>
+            <form
+              className="col-md-7 col-10 contactme-content"
+              onSubmit={this.handleSubmit}
+            >
               {this.renderInput("name", "Name")}
               {this.renderInput("email", "Email")}
               {this.renderSelect(
@@ -43,7 +46,9 @@ class ContactMe extends Form {
                 this.state.mediums
               )}
               {this.renderTextField("message", "Message")}
-              {this.renderButton("Submit")}
+              <div className="text-center">
+                {this.renderButton("Submit", "contactme-button")}
+              </div>
             </form>
           </div>
         </div>
