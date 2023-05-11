@@ -1,14 +1,11 @@
 import React from "react";
-import { Outlet, NavLink } from "react-router-dom";
+// import { Outlet, NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
     <React.Fragment>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <NavLink className="navbar-brand" to="/">
-            Ariel
-          </NavLink>
           <button
             className="navbar-toggler"
             type="button"
@@ -22,31 +19,66 @@ const NavBar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/home">
+              <li className="nav-item mx-3">
+                <a
+                  href="#top"
+                  style={{ textDecoration: "none", color: "white" }}
+                >
                   Home
-                </NavLink>
+                </a>
+                {/* <NavLink className="nav-link" to="/home">
+                  Home
+                </NavLink> */}
               </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/aboutme">
+              <li className="nav-item mx-3">
+                <a
+                  href="#aboutme"
+                  style={{ textDecoration: "none", color: "white" }}
+                >
                   About Me
-                </NavLink>
+                </a>
+                {/* <NavLink className="nav-link" to="/aboutme">
+                  About Me
+                </NavLink> */}
               </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/resume">
+              <li className="nav-item mx-3">
+                <a
+                  href="#portfolio"
+                  style={{ textDecoration: "none", color: "white" }}
+                >
+                  Portfolio
+                </a>
+                {/* <NavLink className="nav-link" to="/home">
+                  Home
+                </NavLink> */}
+              </li>
+              <li className="nav-item mx-3">
+                <a
+                  href="#resume"
+                  style={{ textDecoration: "none", color: "white" }}
+                >
                   Resume
-                </NavLink>
+                </a>
+                {/* <NavLink className="nav-link" to="/resume">
+                  Resume
+                </NavLink> */}
               </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/contactme">
+              <li className="nav-item mx-3">
+                <a
+                  href="#contactme"
+                  style={{ textDecoration: "none", color: "white" }}
+                >
                   Contact Me
-                </NavLink>
+                </a>
+                {/* <NavLink className="nav-link" to="/contactme">
+                  Contact Me
+                </NavLink> */}
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <Outlet />
+      {/* <Outlet /> */}
     </React.Fragment>
   );
 };

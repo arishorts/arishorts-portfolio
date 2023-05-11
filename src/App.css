@@ -1,10 +1,16 @@
-.App {
-  text-align: center;
+:root {
+  --color-sand: #efd9b4;
+  --color-canyon-red: #d16b5a;
+  --color-sagebrush-green: #a2b57f;
+  --color-adobe-orange: #e37759;
+  --color-desert-brown: #8c5a2c;
+  --color-turquoise-blue: #4cb7a5;
+  --color-sky-blue: #6bb0e3;
+  --color-sunset-purple: #7d4e5f;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-container {
+  background-color: var(--color-sky-blue);
 }
 
 @media (prefers-reduced-motion: no-preference) {
