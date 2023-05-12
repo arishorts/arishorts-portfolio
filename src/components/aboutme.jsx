@@ -7,20 +7,12 @@ const AboutMe = () => {
       <h1 className="text-center aboutme-header mb-3">About Me</h1>
 
       <picture className="row justify-content-center">
-        {/* <motion.div
-          className="row justify-content-center"
-          animate={{
-            scale: [1, 1.05, 1.05, 1, 1],
-            rotate: [0, 0, 270, 270, 0],
-          }}
-        > */}
         <img
-          src="/headshot.webp"
-          alt=""
-          srcset="/headshot.webp"
+          alt="Ariel"
+          srcSet="/headshot.webp"
           className="col-4 mb-4 p-0"
           style={{
-            borderRadius: "10%",
+            borderRadius: "5%",
             objectFit: "cover",
             objectPosition: "center",
             width: 300,
@@ -28,8 +20,8 @@ const AboutMe = () => {
             border: "1px solid black",
           }}
         />
-        {/* </motion.div> */}
       </picture>
+
       <section className="fs-5 aboutme-content">
         <h2 className="aboutme-header">Hi im Ariel Schwartz</h2>
         <h3>Backend Developer</h3>

@@ -55,7 +55,10 @@ class Resume extends Component {
               <h3 className="text-center resume-subheader">Experience</h3>
               <div className="row px-5 resume-column">
                 {this.state.experience.map((exp, index) => (
-                  <div className="col-12 my-2 resume-card" key={index}>
+                  <div
+                    className="col-12 my-2 resume-card rounded-4 "
+                    key={index}
+                  >
                     <ExperienceCard
                       name={exp.name}
                       summary={exp.summary}
@@ -68,9 +71,12 @@ class Resume extends Component {
 
             <div className="col-md-6">
               <h3 className="text-center resume-subheader">Education</h3>
-              <div className="row px-5 resume-column">
+              <div className="row px-5 resume-column ">
                 {this.state.education.map((edu, index) => (
-                  <div className="col-12 my-2 resume-card" key={index}>
+                  <div
+                    className="col-12 my-2 resume-card rounded-4"
+                    key={index}
+                  >
                     <ExperienceCard
                       name={edu.name}
                       summary={edu.summary}

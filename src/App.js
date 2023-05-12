@@ -10,7 +10,7 @@ import Footer from "./components/footer";
 function App() {
   return (
     <React.Fragment>
-      <main className="main-container" style={{}}>
+      <main className="main-container">
         <Header />
         <div id="top"></div>
         <AboutMe />

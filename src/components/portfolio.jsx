@@ -3,46 +3,61 @@ import Project from "./common/project";
 
 class Portfolio extends Component {
   state = {
-    experience: [
+    repos: [
+      // {
+      //   name: "Blockflix",
+      //   summary: "A web app for tracking and rating movies and TV shows.",
+      //   date: "2021-05-10T20:15:36Z",
+      //   url: "https://github.com/arishorts/blockflix",
+      //   description:
+      //     "Blockflix is a React app that uses the TMDb API to display movies and TV shows. Users can create an account, add movies and shows to their watchlist, and rate and review them.",
+      // },
       {
-        date: "October 2019 – present",
-        name: "Raytheon Technologies",
-        summary:
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dicta dignissimos quam natus, delectus assumenda aut neque earum vel. Illo, at. Nihil magnam cupiditate voluptate.",
+        name: "My Tech Blog",
+        summary: "A CMS-style blog site for developers.",
+        date: "2021-03-20T15:40:22Z",
+        url: "https://github.com/arishorts/my-tech-blog",
+        description:
+          "My Tech Blog is a Node.js app that uses Express.js, Handlebars.js, and Sequelize to allow users to create an account, write and edit blog posts, and comment on other users' posts.",
+        image: "./mytechblog.jpeg",
       },
       {
-        date: "January 2019 – August 2019",
-        name: "Watts Water Technologies",
-        summary:
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dicta dignissimos quam natus, delectus assumenda aut neque earum vel. Illo, at. Nihil magnam cupiditate voluptate.",
-      },
-      {
-        date: "July 2017 – January 2019",
-        name: "Global Retool Group",
-        summary:
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dicta dignissimos quam natus, delectus assumenda aut neque earum vel. Illo, at. Nihil magnam cupiditate voluptate.",
-      },
-      {
-        date: "April 2016 – July 2017",
-        name: "SMW Manufacturing",
-        summary:
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dicta dignissimos quam natus, delectus assumenda aut neque earum vel. Illo, at. Nihil magnam cupiditate voluptate.",
+        name: "NoteGenius",
+        summary: "A web app for creating and sharing musical notes.",
+        date: "2020-10-31T14:25:58Z",
+        url: "https://github.com/arishorts/NoteGenius",
+        description:
+          "NoteGenius is a React app that uses the VexFlow library to allow users to create and share musical notes. Users can create an account, create and edit notes, and search for notes created by other users.",
+        image: "./notegenius.jpeg",
       },
     ],
   };
+
   render() {
     return (
       <React.Fragment>
-        <div id="portfolio" className="px-5 container-fluid">
-          <h2 className="portfolio-header pt-5 pb-2 text-center">Portfolio</h2>
-          <div className="row ">
-            {this.state.experience.map((exp, index) => (
-              <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={index}>
-                <div className="resume-card p-2" style={{ height: "100%" }}>
+        <div
+          id="portfolio"
+          className="px-5 py-5 portfolio-container container-fluid"
+        >
+          <h2 className="portfolio-header pb-2 text-center">Portfolio</h2>
+          <div className="row">
+            {this.state.repos.map((repo, index) => (
+              <div
+                className="col-12 col-sm-6 col-md-6 col-lg-6 py-2"
+                key={index}
+              >
+                <div
+                  className="resume-card p-2 rounded-4"
+                  style={{ height: "100%" }}
+                >
                   <Project
-                    name={exp.name}
-                    summary={exp.summary}
-                    date={exp.date}
+                    name={repo.name}
+                    summary={repo.summary}
+                    date={repo.date}
+                    url={repo.url}
+                    description={repo.description}
+                    image={repo.image}
                   />
                 </div>
               </div>
@@ -53,4 +68,5 @@ class Portfolio extends Component {
     );
   }
 }
+
 export default Portfolio;

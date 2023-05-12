@@ -10,7 +10,7 @@ const TextField = ({ name, label, error, ...rest }) => {
         {...rest}
         name={name}
         id={name}
-        className="form-control"
+        className="form-control rounded-4"
         rows="7"
         style={{
           backgroundColor: "var(--color-sunset-purple)",

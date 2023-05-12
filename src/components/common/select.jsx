@@ -11,7 +11,7 @@ const Select = ({ name, label, error, options, ...rest }) => {
           name={name}
           id={name}
           {...rest}
-          className="form-select"
+          className="form-select rounded-4"
           style={{
             backgroundColor: "var(--color-sunset-purple)",
             border: "3px solid var(--color-turquoise-blue)",
