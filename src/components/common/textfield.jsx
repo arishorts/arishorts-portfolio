@@ -13,7 +13,7 @@ const TextField = ({ name, label, error, ...rest }) => {
         className="form-control"
         rows="7"
         style={{
-          backgroundColor: "var(--color-desert-brown)",
+          backgroundColor: "var(--color-sunset-purple)",
           border: "3px solid var(--color-turquoise-blue)",
           color: "var(--color-sand)",
         }}

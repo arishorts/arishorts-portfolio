@@ -13,7 +13,7 @@ const Select = ({ name, label, error, options, ...rest }) => {
           {...rest}
           className="form-select"
           style={{
-            backgroundColor: "var(--color-desert-brown)",
+            backgroundColor: "var(--color-sunset-purple)",
             border: "3px solid var(--color-turquoise-blue)",
             color: "var(--color-sand)",
           }}

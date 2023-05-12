@@ -3,8 +3,8 @@ import React from "react";
 
 const AboutMe = () => {
   return (
-    <div className="container-fluid pt-5 pb-5 px-5" id="aboutme">
-      <h2 className="text-center mt-3 aboutme-header">About Me</h2>
+    <div className="container-fluid py-5 px-5" id="aboutme">
+      <h1 className="text-center aboutme-header mb-3">About Me</h1>
 
       <picture className="row justify-content-center">
         {/* <motion.div
@@ -31,16 +31,18 @@ const AboutMe = () => {
         {/* </motion.div> */}
       </picture>
       <section className="fs-5 aboutme-content">
+        <h2 className="aboutme-header">Hi im Ariel Schwartz</h2>
+        <h3>Backend Developer</h3>
         <p className="pt-3">
-          Im Ariel Schwartz, a Full Stack Developer with a passion for building
-          beautiful and functional web applications. Welcome to my portfolio! 🚀
-          I have B.S. in mechanical engineering from the University of Arizona
-          (ABET) with a minor in mathematics. I have found demonstrating
-          engineering rigor to be rewarding and aim to challenge myself with a
-          new career and technical industry innovation. With a strong analytical
-          background, 7+ years of industry experience using Mechanical
-          Engineering, a certification in Full Stack including skills in Agile
-          Software Development, I build client-based solutions.
+          I have a passion for building beautiful and functional web
+          applications. Welcome to my portfolio! 🚀 I have B.S. in mechanical
+          engineering from the University of Arizona (ABET) with a minor in
+          mathematics. I have found demonstrating engineering rigor to be
+          rewarding and aim to challenge myself with a new career and technical
+          industry innovation. With a strong analytical background, 7+ years of
+          industry experience using Mechanical Engineering, a certification in
+          Full Stack including skills in Agile Software Development, I build
+          client-based solutions.
         </p>
         <p>
           I’ve had the opportunity to work on a number of incredible projects

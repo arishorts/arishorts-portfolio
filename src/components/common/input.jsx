@@ -12,7 +12,7 @@ const Input = ({ name, label, error, ...rest }) => {
         id={name}
         className="form-control"
         style={{
-          backgroundColor: "var(--color-desert-brown)",
+          backgroundColor: "var(--color-sunset-purple)",
           border: "3px solid var(--color-turquoise-blue)",
           color: "var(--color-sand)",
         }}
