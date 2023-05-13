@@ -13,7 +13,6 @@ const Select = ({ name, label, error, options, ...rest }) => {
           {...rest}
           className="form-select rounded-4"
           style={{
-            backgroundColor: "var(--color-sunset-purple)",
             border: "3px solid var(--color-turquoise-blue)",
             color: "var(--color-sand)",
           }}
@@ -26,7 +25,7 @@ const Select = ({ name, label, error, options, ...rest }) => {
           ))}
         </select>
       </div>
-      {error && <div className="alert alert-danger">{error}</div>}
+      {error && <div className="alert alert-danger mt-1">{error}</div>}
     </div>
   );
 };

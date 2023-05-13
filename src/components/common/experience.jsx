@@ -1,7 +1,7 @@
 import React from "react";
 import { BiCalendar } from "react-icons/bi";
 
-const ExperienceCard = ({ name, summary, date }) => {
+const Experience = ({ name, summary, date }) => {
   return (
     <div className="card-content card-container">
       <div className="card-content">
@@ -15,4 +15,4 @@ const ExperienceCard = ({ name, summary, date }) => {
   );
 };
 
-export default ExperienceCard;
+export default Experience;

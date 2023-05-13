@@ -12,12 +12,12 @@ const Input = ({ name, label, error, ...rest }) => {
         id={name}
         className="form-control rounded-4"
         style={{
-          backgroundColor: "var(--color-sunset-purple)",
+          // backgroundColor: "var(--color-sunset-purple)",
           border: "3px solid var(--color-turquoise-blue)",
           color: "var(--color-sand)",
         }}
       />
-      {error && <div className="alert alert-danger">{error}</div>}
+      {error && <div className="alert alert-danger mt-1">{error}</div>}
     </div>
   );
 };

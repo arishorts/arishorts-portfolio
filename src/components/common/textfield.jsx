@@ -13,12 +13,11 @@ const TextField = ({ name, label, error, ...rest }) => {
         className="form-control rounded-4"
         rows="7"
         style={{
-          backgroundColor: "var(--color-sunset-purple)",
           border: "3px solid var(--color-turquoise-blue)",
           color: "var(--color-sand)",
         }}
       />
-      {error && <div className="alert alert-danger">{error}</div>}
+      {error && <div className="alert alert-danger mt-1">{error}</div>}
     </div>
   );
 };

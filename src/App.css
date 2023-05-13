@@ -18,6 +18,11 @@
   --color-turquoise-blue: #4cb7a5;
   --color-sky-blue: #6bb0e3;
   --color-sunset-purple: #7d4e5f;
+  --color-copper-orange: #d78f1b;
+  --color-terracotta-red: #be583b;
+  --color-burnt-sienna: #7e462c;
+  --color-camel-tan: #d3b29c;
+  --color-ivory-white: #f3ede3;
 }
 /* Hide the scrollbar */
 .container::-webkit-scrollbar {
@@ -48,11 +53,19 @@
 }
 
 .portfolio-container {
-  background-color: var(--color-sunset-purple);
+  background-color: var(--color-terracotta-red);
 }
 
 .portfolio-header {
   color: var(--color-turquoise-blue);
+}
+
+.project-header {
+  color: var(--color-sand);
+}
+
+.project-content {
+  color: var(--color-sand);
 }
 
 .resume-header {
@@ -84,7 +97,7 @@
 }
 
 .contactme-container {
-  background-color: var(--color-sunset-purple);
+  background-color: var(--color-terracotta-red);
 }
 
 .contactme-header {
@@ -105,6 +118,13 @@
   border: 2px solid var(--color-canyon-red);
   font-weight: 600;
   width: 30%;
+}
+
+#email,
+#name,
+#medium,
+#message {
+  background-color: var(--color-terracotta-red);
 }
 
 .footer-header {

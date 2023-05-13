@@ -1,4 +1,4 @@
-import ExperienceCard from "./common/experiencecard";
+import Experience from "./common/experience";
 import React, { Component } from "react";
 
 class Resume extends Component {
@@ -59,7 +59,7 @@ class Resume extends Component {
                     className="col-12 my-2 resume-card rounded-4 "
                     key={index}
                   >
-                    <ExperienceCard
+                    <Experience
                       name={exp.name}
                       summary={exp.summary}
                       date={exp.date}
@@ -77,7 +77,7 @@ class Resume extends Component {
                     className="col-12 my-2 resume-card rounded-4"
                     key={index}
                   >
-                    <ExperienceCard
+                    <Experience
                       name={edu.name}
                       summary={edu.summary}
                       date={edu.date}
