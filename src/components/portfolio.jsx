@@ -33,6 +33,13 @@ class Portfolio extends Component {
           "The front end of this application is built using bootstrap-esque css and javascript. The backend is using the Express framework for Node.js, and the frontend is using vanilla JavaScript to interact with the server via RESTful APIs. The Note Taker application allows users to create, save, and view notes. Overall, the Note Taker application provides users with a simple and intuitive way to take and organize notes.",
         image: "./notegenius.jpeg",
       },
+      {
+        name: "J.A.T.E",
+        url: "https://arishorts-jate.herokuapp.com/",
+        description:
+          "This app is a text editor that allows users to create and edit a text file. It has a simple interface and features basic functionality. One unique feature of this text editor is its ability to be installed as a progressive web app (PWA). This app configures a Webpack development environment for a web application called J.A.T.E. It sets up plugins that generate HTML and a manifest file, add CSS loaders and Babel, and inject a custom service worker to cache assets and pages for offline access.",
+        image: "./jate.jpg",
+      },
     ],
   };
 
@@ -49,7 +56,7 @@ class Portfolio extends Component {
           <div className="row justify-content-evenly">
             {this.state.repos.map((repo, index) => (
               <div
-                className="col-12 col-sm-5 col-md-5 col-lg-5 py-2"
+                className="col-12 col-sm-5 col-md-5 col-lg-5 py-2 my-4"
                 key={index}
               >
                 <div

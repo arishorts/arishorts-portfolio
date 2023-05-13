@@ -32,6 +32,11 @@
   display: none;
 } */
 
+a:hover {
+  color: var(--color-turquoise-blue) !important;
+  text-decoration: underline;
+}
+
 .header-container {
   background-color: var(--color-hunt-club);
 }
@@ -110,4 +115,19 @@
 
 .footer-icon {
   font-size: 2rem;
+}
+
+.card-container {
+  position: relative;
+}
+
+.card-container::before {
+  content: "";
+  position: absolute;
+  top: -0.8rem;
+  left: -4.9rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--color-turquoise-blue);
+  border-radius: 50%;
 }
