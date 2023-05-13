@@ -19,15 +19,6 @@ const NavBar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ">
-              <li className="nav-item  mx-3">
-                <a
-                  href="#top"
-                  style={{ textDecoration: "none" }}
-                  className="navbar-item"
-                >
-                  Home
-                </a>
-              </li>
               <li className="nav-item mx-3">
                 <a
                   href="#aboutme"

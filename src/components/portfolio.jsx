@@ -8,8 +8,8 @@ class Portfolio extends Component {
         name: "Ballot-Box",
         url: "https://fathomless-gorge-67746.herokuapp.com/",
         description:
-          "My Tech Blog is a Node.js app that uses Express.js, Handlebars.js, and Sequelize to allow users to create an account, write and edit blog posts, and comment on other users' posts.",
-        image: "./mytechblog.jpeg",
+          "Join Ballot-Box and make your opinion count! This is a poll application, when opened, the user is presented with options for a poll.After clicking on one of the poll options, poll results appear on the screen in real-time. In addition, the user can create a poll and share the link with others.The user can delete a poll, if they would like.",
+        image: "./ballotbox.jpg",
       },
       // {
       //   name: "Blockflix",
@@ -23,14 +23,14 @@ class Portfolio extends Component {
         name: "My Tech Blog",
         url: "https://github.com/arishorts/my-tech-blog",
         description:
-          "My Tech Blog is a Node.js app that uses Express.js, Handlebars.js, and Sequelize to allow users to create an account, write and edit blog posts, and comment on other users' posts.",
+          "This blogging app is a powerful tool for anyone who wants to create and share content on the web. It provides a simple and intuitive interface for users to write and publish blog posts on a variety of topics. The app also allows users to engage with each other through comments and social sharing, making it an ideal platform for building a community around a particular topic or niche.",
         image: "./mytechblog.jpeg",
       },
       {
         name: "NoteGenius",
         url: "https://github.com/arishorts/NoteGenius",
         description:
-          "NoteGenius is a React app that uses the VexFlow library to allow users to create and share musical notes. Users can create an account, create and edit notes, and search for notes created by other users.",
+          "The front end of this application is built using bootstrap-esque css and javascript. The backend is using the Express framework for Node.js, and the frontend is using vanilla JavaScript to interact with the server via RESTful APIs. The Note Taker application allows users to create, save, and view notes. Overall, the Note Taker application provides users with a simple and intuitive way to take and organize notes.",
         image: "./notegenius.jpeg",
       },
     ],
@@ -46,10 +46,10 @@ class Portfolio extends Component {
           <h2 className="portfolio-header pb-2 text-center">
             My <span className="portfolio-span">Portfolio</span>
           </h2>
-          <div className="row">
+          <div className="row justify-content-evenly">
             {this.state.repos.map((repo, index) => (
               <div
-                className="col-12 col-sm-6 col-md-6 col-lg-6 py-2"
+                className="col-12 col-sm-5 col-md-5 col-lg-5 py-2"
                 key={index}
               >
                 <div

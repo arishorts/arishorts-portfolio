@@ -14,22 +14,21 @@ function Project({ name, summary, date, url, description, image }) {
         <h4>{name}</h4>
       </a>
       <a href={url}>
-        <picture className="row justify-content-center m-3">
+        <picture className="row justify-content-center m-2">
           <img
             alt=""
             srcSet={image}
-            className="col-4 mb-4 p-0 rounded-4 project-pricture"
+            className="p-0 rounded-4 project-picture"
             style={{
               borderRadius: "5%",
               objectPosition: "center",
               width: "auto",
-              height: "auto",
               border: "1px solid black",
             }}
           />
         </picture>
       </a>
-      <p className="project-content">{description}</p>
+      <p className="project-content mx-3">{description}</p>
       {/* <div className="description" data-tip={description}>
         Hover to see description
       </div>
