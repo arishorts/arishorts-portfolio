@@ -4,6 +4,13 @@ import Project from "./common/project";
 class Portfolio extends Component {
   state = {
     repos: [
+      {
+        name: "Ballot-Box",
+        url: "https://fathomless-gorge-67746.herokuapp.com/",
+        description:
+          "My Tech Blog is a Node.js app that uses Express.js, Handlebars.js, and Sequelize to allow users to create an account, write and edit blog posts, and comment on other users' posts.",
+        image: "./mytechblog.jpeg",
+      },
       // {
       //   name: "Blockflix",
       //   summary: "A web app for tracking and rating movies and TV shows.",
@@ -14,8 +21,6 @@ class Portfolio extends Component {
       // },
       {
         name: "My Tech Blog",
-        summary: "A CMS-style blog site for developers.",
-        date: "2021-03-20T15:40:22Z",
         url: "https://github.com/arishorts/my-tech-blog",
         description:
           "My Tech Blog is a Node.js app that uses Express.js, Handlebars.js, and Sequelize to allow users to create an account, write and edit blog posts, and comment on other users' posts.",
@@ -23,8 +28,6 @@ class Portfolio extends Component {
       },
       {
         name: "NoteGenius",
-        summary: "A web app for creating and sharing musical notes.",
-        date: "2020-10-31T14:25:58Z",
         url: "https://github.com/arishorts/NoteGenius",
         description:
           "NoteGenius is a React app that uses the VexFlow library to allow users to create and share musical notes. Users can create an account, create and edit notes, and search for notes created by other users.",
@@ -40,7 +43,9 @@ class Portfolio extends Component {
           id="portfolio"
           className="px-5 py-5 portfolio-container container-fluid"
         >
-          <h2 className="portfolio-header pb-2 text-center">Portfolio</h2>
+          <h2 className="portfolio-header pb-2 text-center">
+            My <span className="portfolio-span">Portfolio</span>
+          </h2>
           <div className="row">
             {this.state.repos.map((repo, index) => (
               <div

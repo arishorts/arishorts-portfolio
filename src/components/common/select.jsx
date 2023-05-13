@@ -12,10 +12,6 @@ const Select = ({ name, label, error, options, ...rest }) => {
           id={name}
           {...rest}
           className="form-select rounded-4"
-          style={{
-            border: "3px solid var(--color-turquoise-blue)",
-            color: "var(--color-sand)",
-          }}
         >
           <option value=""></option>
           {options.map((option) => (

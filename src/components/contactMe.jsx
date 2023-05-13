@@ -33,7 +33,9 @@ class ContactMe extends Form {
       <React.Fragment>
         <div className="container-fluid contactme-container" id="contactme">
           <div className="mt-5 py-5 row justify-content-center">
-            <h2 className="text-center contactme-header mb-3">Contact Me</h2>
+            <h2 className="text-center contactme-header mb-3">
+              Contact <span className="contactme-span">Me</span>
+            </h2>
             <form
               className="col-md-7 col-10 contactme-content"
               onSubmit={this.handleSubmit}

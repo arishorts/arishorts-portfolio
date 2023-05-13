@@ -4,7 +4,9 @@ import React from "react";
 const AboutMe = () => {
   return (
     <div className="container-fluid py-5 px-5" id="aboutme">
-      <h1 className="text-center aboutme-header mb-3">About Me</h1>
+      <h1 className="text-center aboutme-header mb-3">
+        About <span className="aboutme-span">Me</span>
+      </h1>
 
       <picture className="row justify-content-center">
         <img

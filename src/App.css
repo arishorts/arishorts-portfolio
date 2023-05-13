@@ -6,162 +6,108 @@
   border: none;
   outline: none;
   scroll-behavior: smooth;
-  user-select: none;
+  /* user-select: none; */
 }
 
 :root {
+  --color-cactus-green: #5e826e;
+  --color-hunt-club: #2a5043;
   --color-sand: #efd9b4;
   --color-canyon-red: #d16b5a;
   --color-sagebrush-green: #a2b57f;
   --color-adobe-orange: #e37759;
-  --color-desert-brown: #8c5a2c;
-  --color-turquoise-blue: #4cb7a5;
+  --color-renwick-rose-beige: #ae8871;
+  --color-terra-brun: #5d3828;
+  --color-turquoise-blue: #5fd8c4;
   --color-sky-blue: #6bb0e3;
   --color-sunset-purple: #7d4e5f;
   --color-copper-orange: #d78f1b;
-  --color-terracotta-red: #be583b;
+  --color-baked-clay: #c2785d;
   --color-burnt-sienna: #7e462c;
   --color-camel-tan: #d3b29c;
   --color-ivory-white: #f3ede3;
 }
-/* Hide the scrollbar */
+/* Hide the scrollbar
 .container::-webkit-scrollbar {
   display: none;
-}
-
-.main-container {
-  background-color: var(--color-desert-brown);
-}
+} */
 
 .header-container {
-  background-color: var(--color-canyon-red);
+  background-color: var(--color-hunt-club);
 }
 
 .header-brand,
 .navbar-item {
   text-decoration: "none";
-  color: var(--color-sand);
+  color: var(--color-ivory-white);
   font-size: 1.2rem;
 }
 
-.aboutme-content {
-  color: var(--color-sand);
+.main-container,
+#resume-container {
+  background-color: var(--color-hunt-club);
 }
 
-.aboutme-header {
+.resume-span,
+.aboutme-span,
+.portfolio-span,
+.contactme-span,
+.card-container,
+.card-year {
   color: var(--color-turquoise-blue);
 }
 
-.portfolio-container {
-  background-color: var(--color-terracotta-red);
+.portfolio-container,
+.contactme-container,
+#email,
+#name,
+#medium,
+#message {
+  background-color: var(--color-cactus-green);
 }
 
-.portfolio-header {
-  color: var(--color-turquoise-blue);
-}
-
-.project-header {
-  color: var(--color-sand);
-}
-
-.project-content {
-  color: var(--color-sand);
-}
-
-.resume-header {
-  color: var(--color-sand);
-}
-
-.resume-span {
-  color: var(--color-turquoise-blue);
-}
-
-.resume-subheader {
-  color: var(--color-sand);
+.aboutme-header,
+.aboutme-content,
+.project-header,
+.project-content,
+.portfolio-header,
+.resume-header,
+.resume-subheader,
+.card-content,
+.contactme-header,
+.form-label,
+.footer-header,
+.footer-icon,
+#email,
+#name,
+#medium,
+#message {
+  color: var(--color-ivory-white);
 }
 
 .resume-column {
   border-left: 2px solid var(--color-turquoise-blue);
 }
 
-.resume-card {
-  border: 2px solid var(--color-turquoise-blue);
-}
-
-.card-container {
-  color: var(--color-turquoise-blue);
-}
-
-.card-content {
-  color: var(--color-sand);
-}
-
-.contactme-container {
-  background-color: var(--color-terracotta-red);
-}
-
-.contactme-header {
-  color: var(--color-turquoise-blue);
-}
-
-.form-label {
-  color: var(--color-sand);
-}
-
-.form-control {
-  background-color: var(--color-sand);
-}
-
-#contactme-button {
-  background-color: var(--color-turquoise-blue);
-  color: var(--color-sunset-purple);
-  border: 2px solid var(--color-canyon-red);
-  font-weight: 600;
-  width: 30%;
-}
-
+.resume-card,
 #email,
 #name,
 #medium,
 #message {
-  background-color: var(--color-terracotta-red);
+  border: 2px solid var(--color-turquoise-blue);
 }
 
-.footer-header {
-  color: var(--color-sand);
+.form-control {
+  background-color: var(--color-ivory-white);
+}
+
+#contactme-button {
+  background-color: var(--color-turquoise-blue);
+  color: var(--color-cactus-green);
+  font-weight: 600;
+  width: 30%;
 }
 
 .footer-icon {
-  color: var(--color-sand);
   font-size: 2rem;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
