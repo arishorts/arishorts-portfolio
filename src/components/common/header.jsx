@@ -2,7 +2,7 @@ import React from "react";
 import NavBar from "./navbar";
 // import { Outlet, NavLink } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ currentPage, handlePageChange }) => {
   return (
     <React.Fragment>
       <div
@@ -10,10 +10,6 @@ const Header = () => {
         style={{ position: "fixed", width: "100%" }}
       >
         <div className="col-2">
-          {/* <NavLink className="navbar-brand" to="/">
-            Ariel
-          </NavLink> */}
-
           <a
             href="#top"
             className="h1 header-brand"
@@ -23,7 +19,7 @@ const Header = () => {
           </a>
         </div>
         <div className="col-10  d-flex justify-content-end">
-          <NavBar />
+          <NavBar currentPage={currentPage} onPageChange={handlePageChange} />
         </div>
       </div>
     </React.Fragment>

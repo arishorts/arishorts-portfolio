@@ -6,7 +6,7 @@
   border: none;
   outline: none;
   scroll-behavior: smooth;
-  /* user-select: none; */
+  user-select: none;
 }
 
 :root {
@@ -27,10 +27,11 @@
   --color-camel-tan: #d3b29c;
   --color-ivory-white: #f3ede3;
 }
-/* Hide the scrollbar
-.container::-webkit-scrollbar {
-  display: none;
-} */
+
+html {
+  background-color: var(--color-hunt-club);
+}
+/* How do i set the negative space to green */
 
 a:hover {
   color: var(--color-turquoise-blue) !important;
@@ -39,6 +40,7 @@ a:hover {
 
 .header-container {
   background-color: var(--color-hunt-club);
+  z-index: 10;
 }
 
 .header-brand,
@@ -57,8 +59,8 @@ a:hover {
 .aboutme-span,
 .portfolio-span,
 .contactme-span,
-.card-container,
-.card-year {
+.resumecard-container,
+.resumecard-year {
   color: var(--color-turquoise-blue);
 }
 
@@ -78,7 +80,7 @@ a:hover {
 .portfolio-header,
 .resume-header,
 .resume-subheader,
-.card-content,
+.resume-card,
 .contactme-header,
 .form-label,
 .footer-header,
@@ -95,6 +97,7 @@ a:hover {
 }
 
 .resume-card,
+.portfolio-card,
 #email,
 #name,
 #medium,
@@ -117,17 +120,85 @@ a:hover {
   font-size: 2rem;
 }
 
-.card-container {
+/* Resume Behavior */
+
+.resume-column {
   position: relative;
+  left: 2.4rem;
 }
 
-.card-container::before {
-  content: "";
+.resume-card {
+  position: relative;
+  z-index: 1;
+}
+
+.resume-card::before {
   position: absolute;
-  top: -0.8rem;
-  left: -4.9rem;
+  content: "";
+  top: -0.6rem;
+  left: -4.2rem;
   width: 2rem;
   height: 2rem;
   background-color: var(--color-turquoise-blue);
   border-radius: 50%;
+}
+
+.resumecard-content {
+  position: relative;
+  overflow: hidden;
+}
+
+.resumecard-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: var(--color-cactus-green);
+  z-index: -1;
+  border-radius: 0.9rem;
+  transition: 0.5s;
+}
+
+.resumecard-content:hover::before {
+  width: 100%;
+}
+
+/* img control */
+.about-img {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 1rem;
+}
+
+.about-img img {
+  border-radius: 50%;
+  width: 20rem;
+  height: 20rem;
+  object-position: 85% 50%;
+  object-fit: cover;
+  border: 0.2rem solid var(--color-turquoise-blue);
+}
+
+.circle-spin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0);
+  width: 22rem;
+  height: 22rem;
+  border-radius: 50%;
+  border-top: 0.2rem solid var(--color-turquoise-blue);
+  border-bottom: 0.2rem solid var(--color-turquoise-blue);
+  border-left: 0.2rem solid var(--color-hunt-club);
+  border-right: 0.2rem solid var(--color-hunt-club);
+  animation: aboutSpinner 8s linear infinite;
+}
+
+@keyframes aboutSpinner {
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }

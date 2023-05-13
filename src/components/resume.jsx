@@ -1,4 +1,4 @@
-import Experience from "./common/experience";
+import ResumeCard from "./common/resumecard";
 import React, { Component } from "react";
 
 class Resume extends Component {
@@ -45,46 +45,36 @@ class Resume extends Component {
   render() {
     return (
       <React.Fragment>
-        <div id="resume" className="px-5 container-fluid resume-container">
+        <div id="resume" className="px-5 container-fluid resume-container row">
           <h2 className="resume-header pt-5 pb-2 text-center">
             My <span className="resume-span">Journey</span>
           </h2>
 
-          <div className="row g-5">
-            <div className="col-md-6">
-              <h3 className="text-center resume-subheader">Experience</h3>
-              <div className="row px-5 resume-column">
-                {this.state.experience.map((exp, index) => (
-                  <div
-                    className="col-12 my-2 resume-card rounded-4 "
-                    key={index}
-                  >
-                    <Experience
-                      name={exp.name}
-                      summary={exp.summary}
-                      date={exp.date}
-                    />
-                  </div>
-                ))}
-              </div>
+          <div className="col-md-6 resume-majorcolumn">
+            <h3 className="text-center resume-subheader">Experience</h3>
+            <div className="row px-5 resume-column">
+              {this.state.experience.map((exp, index) => (
+                <ResumeCard
+                  key={index}
+                  name={exp.name}
+                  summary={exp.summary}
+                  date={exp.date}
+                />
+              ))}
             </div>
+          </div>
 
-            <div className="col-md-6">
-              <h3 className="text-center resume-subheader">Education</h3>
-              <div className="row px-5 resume-column ">
-                {this.state.education.map((edu, index) => (
-                  <div
-                    className="col-12 my-2 resume-card rounded-4"
-                    key={index}
-                  >
-                    <Experience
-                      name={edu.name}
-                      summary={edu.summary}
-                      date={edu.date}
-                    />
-                  </div>
-                ))}
-              </div>
+          <div className="col-md-6 resume-majorcolumn">
+            <h3 className="text-center resume-subheader">Education</h3>
+            <div className="row px-5 resume-column">
+              {this.state.education.map((edu, index) => (
+                <ResumeCard
+                  key={index}
+                  name={edu.name}
+                  summary={edu.summary}
+                  date={edu.date}
+                />
+              ))}
             </div>
           </div>
         </div>

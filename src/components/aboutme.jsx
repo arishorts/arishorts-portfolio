@@ -4,24 +4,13 @@ import React from "react";
 const AboutMe = () => {
   return (
     <div className="container-fluid py-5 px-5" id="aboutme">
-      <h1 className="text-center aboutme-header mb-3">
+      <h2 className="text-center aboutme-header mb-3">
         About <span className="aboutme-span">Me</span>
-      </h1>
+      </h2>
 
-      <picture className="row justify-content-center">
-        <img
-          alt="Ariel"
-          srcSet="/headshot.webp"
-          className="col-4 mb-4 p-0"
-          style={{
-            borderRadius: "5%",
-            objectFit: "cover",
-            objectPosition: "center",
-            width: 300,
-            height: 300,
-            border: "1px solid black",
-          }}
-        />
+      <picture className="about-img">
+        <img alt="Ariel" srcSet="/headshot.webp" />
+        <span className="circle-spin"></span>
       </picture>
 
       <section className="fs-5 aboutme-content">

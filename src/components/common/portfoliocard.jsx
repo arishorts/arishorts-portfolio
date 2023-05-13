@@ -1,7 +1,7 @@
 import React from "react";
 // import { Tooltip } from "react-tooltip";
 
-function Project({ name, summary, date, url, description, image }) {
+function PortfolioCard({ name, summary, date, url, description, image }) {
   return (
     <div className="project">
       <a
@@ -37,4 +37,4 @@ function Project({ name, summary, date, url, description, image }) {
   );
 }
 
-export default Project;
+export default PortfolioCard;

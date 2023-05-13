@@ -1,7 +1,6 @@
 import React from "react";
-// import { Outlet, NavLink } from "react-router-dom";
 
-const NavBar = () => {
+const NavBar = ({ currentPage, onPageChange }) => {
   return (
     <React.Fragment>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -22,8 +21,13 @@ const NavBar = () => {
               <li className="nav-item mx-3">
                 <a
                   href="#aboutme"
+                  onClick={() => onPageChange("AboutMe")}
                   style={{ textDecoration: "none" }}
-                  className="navbar-item"
+                  className={
+                    currentPage === "AboutMe"
+                      ? "navbar-item active"
+                      : "navbar-item"
+                  }
                 >
                   About Me
                 </a>
@@ -31,8 +35,13 @@ const NavBar = () => {
               <li className="nav-item mx-3">
                 <a
                   href="#portfolio"
+                  onClick={() => onPageChange("Portfolio")}
                   style={{ textDecoration: "none" }}
-                  className="navbar-item"
+                  className={
+                    currentPage === "Portfolio"
+                      ? "navbar-item active"
+                      : "navbar-item"
+                  }
                 >
                   Portfolio
                 </a>
@@ -40,8 +49,13 @@ const NavBar = () => {
               <li className="nav-item mx-3">
                 <a
                   href="#resume"
+                  onClick={() => onPageChange("Resume")}
                   style={{ textDecoration: "none" }}
-                  className="navbar-item"
+                  className={
+                    currentPage === "Resume"
+                      ? "navbar-item active"
+                      : "navbar-item"
+                  }
                 >
                   Resume
                 </a>
@@ -49,8 +63,13 @@ const NavBar = () => {
               <li className="nav-item mx-3">
                 <a
                   href="#contactme"
+                  onClick={() => onPageChange("ContactMe")}
                   style={{ textDecoration: "none" }}
-                  className="navbar-item"
+                  className={
+                    currentPage === "ContactMe"
+                      ? "navbar-item active"
+                      : "navbar-item"
+                  }
                 >
                   Contact Me
                 </a>

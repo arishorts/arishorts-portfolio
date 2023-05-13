@@ -32,7 +32,7 @@ class ContactMe extends Form {
     return (
       <React.Fragment>
         <div className="container-fluid contactme-container" id="contactme">
-          <div className="mt-5 py-5 row justify-content-center">
+          <div className="py-5 row justify-content-center">
             <h2 className="text-center contactme-header mb-3">
               Contact <span className="contactme-span">Me</span>
             </h2>
