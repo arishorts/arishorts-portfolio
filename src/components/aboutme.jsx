@@ -9,7 +9,7 @@ const AboutMe = () => {
       </h2>
 
       <picture className="about-img">
-        <img alt="Ariel" srcSet="/headshot.webp" />
+        <img alt="Ariel" srcSet="./headshot.webp" />
         <span className="circle-spin"></span>
       </picture>
 
