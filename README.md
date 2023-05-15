@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# My Portfolio ![alt text](https://img.shields.io/badge/License-MIT-blue.svg)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description:
 
-## Available Scripts
+&nbsp; I'm Ariel Schwartz, a Full Stack Developer with a passion for building beautiful and functional web applications. I have B.S. in mechanical engineering from the University of Arizona (ABET) with a minor in mathematics. I have found demonstrating engineering rigor to be rewarding and aim to challenge myself with a new career and technical industry innovation. With a strong analytical background, 7+ years of industry experience using Mechanical Engineering, a certification in Full Stack including skills in Agile Software Development, I build client-based solutions. I’ve had the opportunity to work on a number of incredible projects that have allowed me to grow and establish myself within this competitive industry. I hope you’ll enjoy viewing some projects on my [portfolio](https://arishorts.github.io/arishorts-portfolio/) as much as I enjoyed working on them.
 
-In the project directory, you can run:
+User Story: AS AN employer looking for candidates with experience building single-page applications
+I WANT to view a potential employee's deployed React portfolio of work samples
+SO THAT I can assess whether they're a good candidate for an open position
 
-### `npm start`
+## Table of Contents:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Installation](#installation)
+- [Usage](#usage)
+- [Tests](#tests)
+- [Badges](#badges)
+- [How_to_Contribute](#how_to_contribute)
+- [Questions](#questions)
+- [License](#license)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation:
 
-### `npm test`
+&nbsp; None
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Usage:
 
-### `npm run build`
+&nbsp; The website can be found at: https://arishorts.github.io/arishorts-portfolio/
+![alt text](./public/resume.jpg)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tests:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+&nbsp; No
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Badges:
 
-### `npm run eject`
+![badmath](https://img.shields.io/badge/JavaScript-81%25-purple)
+![badmath](https://img.shields.io/badge/CSS-13%25-purple)
+![badmath](https://img.shields.io/badge/HTML-6%25-purple)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## How_to_Contribute:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+&nbsp; If you would like to contribute, refer to the [Contributor Covenant](https://www.contributor-covenant.org/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Questions:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+&nbsp; My GitHub profile can be found at: https://github.com/arishorts
+<br>&nbsp; Reach me with additional questions at : arieljschwartz@gmail.com
 
-## Learn More
+## License:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+&nbsp; http://choosealicense.com/licenses/mit/
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+© 2022 Ariel Schwartz LLC. Confidential and Proprietary. All Rights Reserved.
