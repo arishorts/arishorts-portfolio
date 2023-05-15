@@ -9,7 +9,7 @@ const AboutMe = () => {
       </h2>
 
       <picture className="about-img">
-        <img alt="Ariel" srcSet="/public/headshot.webp" />
+        <img alt="Ariel" srcSet={process.env.PUBLIC_URL + "/headshot.webp"} />
         <span className="circle-spin"></span>
       </picture>
 
