@@ -1,9 +1,21 @@
 import React from "react";
+import { BsGithub } from "react-icons/bs";
 // import { Tooltip } from "react-tooltip";
 
-function PortfolioCard({ name, summary, date, url, description, image }) {
+function PortfolioCard({
+  name,
+  summary,
+  date,
+  url,
+  description,
+  image,
+  github,
+}) {
   return (
     <div className="project">
+      <a className="github-link" href={github}>
+        <BsGithub />
+      </a>
       <a
         href={url}
         target="_blank"

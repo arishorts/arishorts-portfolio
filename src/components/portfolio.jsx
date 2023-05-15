@@ -10,6 +10,7 @@ class Portfolio extends Component {
         description:
           "Join Ballot-Box and make your opinion count! This is a poll application, when opened, the user is presented with options for a poll.After clicking on one of the poll options, poll results appear on the screen in real-time. In addition, the user can create a poll and share the link with others.The user can delete a poll, if they would like.",
         image: process.env.PUBLIC_URL + "/ballotbox.jpg",
+        github: "https://github.com/ttieman/Ballot-Box",
       },
       // {
       //   name: "Blockflix",
@@ -21,17 +22,19 @@ class Portfolio extends Component {
       // },
       {
         name: "My Tech Blog",
-        url: "https://github.com/arishorts/my-tech-blog",
+        url: "https://arishorts-mytechblog.herokuapp.com/",
         description:
           "This blogging app is a powerful tool for anyone who wants to create and share content on the web. It provides a simple and intuitive interface for users to write and publish blog posts on a variety of topics. The app also allows users to engage with each other through comments and social sharing, making it an ideal platform for building a community around a particular topic or niche.",
         image: process.env.PUBLIC_URL + "/mytechblog.jpeg",
+        github: "https://github.com/arishorts/my-tech-blog",
       },
       {
         name: "NoteGenius",
-        url: "https://github.com/arishorts/NoteGenius",
+        url: "https://arishorts-notegenius.herokuapp.com/",
         description:
           "The front end of this application is built using bootstrap-esque css and javascript. The backend is using the Express framework for Node.js, and the frontend is using vanilla JavaScript to interact with the server via RESTful APIs. The Note Taker application allows users to create, save, and view notes. Overall, the Note Taker application provides users with a simple and intuitive way to take and organize notes.",
         image: process.env.PUBLIC_URL + "/notegenius.jpeg",
+        github: "https://github.com/arishorts/NoteGenius",
       },
       {
         name: "J.A.T.E",
@@ -39,6 +42,7 @@ class Portfolio extends Component {
         description:
           "This app is a text editor that allows users to create and edit a text file. It has a simple interface and features basic functionality. One unique feature of this text editor is its ability to be installed as a progressive web app (PWA). This app configures a Webpack development environment for a web application called J.A.T.E. It sets up plugins that generate HTML and a manifest file, add CSS loaders and Babel, and inject a custom service worker to cache assets and pages for offline access.",
         image: process.env.PUBLIC_URL + "/jate.jpg",
+        github: "https://github.com/arishorts/PWA-Text-Editor",
       },
     ],
   };
@@ -70,6 +74,7 @@ class Portfolio extends Component {
                     url={repo.url}
                     description={repo.description}
                     image={repo.image}
+                    github={repo.github}
                   />
                 </div>
               </div>
