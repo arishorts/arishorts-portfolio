@@ -34,9 +34,10 @@ html {
 /* How do i set the negative space to green */
 
 a:hover,
+.downloadLink,
 .github-link {
   color: var(--color-turquoise-blue) !important;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .header-container {

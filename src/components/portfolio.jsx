@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import Project from "./common/project";
+import DownloadLink from "./common/download";
 
 class Portfolio extends Component {
   state = {
+    resume: process.env.PUBLIC_URL + "/Ariel_Schwartz_Resume.pdf",
     repos: [
       {
         name: "Ballot-Box",
@@ -57,6 +59,10 @@ class Portfolio extends Component {
           <h2 className="portfolio-header pb-2 text-center">
             My <span className="portfolio-span">Portfolio</span>
           </h2>
+          <div className="text-center">
+            <DownloadLink fileUrl={this.state.resume} />
+          </div>
+
           <div className="row justify-content-evenly">
             {this.state.repos.map((repo, index) => (
               <div
