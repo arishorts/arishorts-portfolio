@@ -94,6 +94,14 @@ a:hover,
   color: var(--color-ivory-white);
 }
 
+.project {
+  position: relative;
+}
+
+.github-link {
+  position: absolute !important;
+}
+
 .resume-column {
   border-left: 2px solid var(--color-turquoise-blue);
 }

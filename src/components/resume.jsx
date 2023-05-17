@@ -1,8 +1,10 @@
 import ResumeCard from "./common/resumecard";
 import React, { Component } from "react";
+import DownloadLink from "./common/download";
 
 class Resume extends Component {
   state = {
+    resume: process.env.PUBLIC_URL + "/Ariel_Schwartz_Resume.pdf",
     experience: [
       {
         date: "October 2019 – present",
@@ -49,6 +51,9 @@ class Resume extends Component {
           <h2 className="resume-header pt-5 pb-2 text-center">
             My <span className="resume-span">Journey</span>
           </h2>
+          <div className="text-center">
+            <DownloadLink fileUrl={this.state.resume} />
+          </div>
 
           <div className="col-md-6 resume-majorcolumn">
             <h3 className="text-center resume-subheader">Experience</h3>

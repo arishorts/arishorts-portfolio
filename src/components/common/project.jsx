@@ -1,22 +1,26 @@
 import React from "react";
 import { BsGithub } from "react-icons/bs";
 // import { Tooltip } from "react-tooltip";
+import { Container, Row } from "react-bootstrap";
 
-function Project({ name, summary, date, url, description, image, github }) {
+function Project({ name, url, description, image, github }) {
   return (
-    <div className="project">
-      <a className="github-link" href={github}>
-        <BsGithub />
-      </a>
-      <a
-        href={url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="project-header text-center"
-        style={{ textDecoration: "none" }}
-      >
-        <h4>{name}</h4>
-      </a>
+    <Container className="project">
+      <Row className="p-2">
+        <a className="github-link" href={github}>
+          <BsGithub />
+        </a>
+
+        <a
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="project-header text-center"
+          style={{ textDecoration: "none" }}
+        >
+          <h4>{name}</h4>
+        </a>
+      </Row>
       <a href={url}>
         <picture className="row justify-content-center m-2">
           <img
@@ -32,12 +36,12 @@ function Project({ name, summary, date, url, description, image, github }) {
           />
         </picture>
       </a>
-      <p className="project-content mx-3">{description}</p>
+      <p className="project-content px-2">{description}</p>
       {/* <div className="description" data-tip={description}>
         Hover to see description
-      </div>
+        </div>
       <Tooltip effect="solid" place="top" /> */}
-    </div>
+    </Container>
   );
 }
 

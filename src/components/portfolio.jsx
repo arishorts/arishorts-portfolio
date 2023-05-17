@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Project from "./common/project";
-import DownloadLink from "./common/download";
 
 class Portfolio extends Component {
   state = {
@@ -59,9 +58,6 @@ class Portfolio extends Component {
           <h2 className="portfolio-header pb-2 text-center">
             My <span className="portfolio-span">Portfolio</span>
           </h2>
-          <div className="text-center">
-            <DownloadLink fileUrl={this.state.resume} />
-          </div>
 
           <div className="row justify-content-evenly">
             {this.state.repos.map((repo, index) => (
@@ -70,13 +66,11 @@ class Portfolio extends Component {
                 key={index}
               >
                 <div
-                  className="portfolio-card p-2 rounded-4"
+                  className="portfolio-card rounded-4"
                   style={{ height: "100%" }}
                 >
                   <Project
                     name={repo.name}
-                    summary={repo.summary}
-                    date={repo.date}
                     url={repo.url}
                     description={repo.description}
                     image={repo.image}
