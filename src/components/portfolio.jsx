@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import PortfolioCard from "./common/portfoliocard";
+import Project from "./common/project";
 
 class Portfolio extends Component {
   state = {
@@ -67,7 +67,7 @@ class Portfolio extends Component {
                   className="portfolio-card p-2 rounded-4"
                   style={{ height: "100%" }}
                 >
-                  <PortfolioCard
+                  <Project
                     name={repo.name}
                     summary={repo.summary}
                     date={repo.date}
