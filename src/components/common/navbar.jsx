@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 
 const NavBar = ({ currentPage, onPageChange }) => {
   return (
@@ -10,66 +10,26 @@ const NavBar = ({ currentPage, onPageChange }) => {
         expand="lg"
         fixed="top"
       >
-        <Container>
-          <Navbar.Brand id="navbar-brand" href="#top">
-            Ariel.
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link
-                href="#aboutme"
-                id="navbar-item-aboutme"
-                // onClick={() => onPageChange("AboutMe")}
-                style={{ textDecoration: "none" }}
-                // className={
-                //   currentPage === "AboutMe" ? "nav-item active" : "nav-item"
-                // }
-              >
-                About Me
-              </Nav.Link>
-              <Nav.Link
-                href="#portfolio"
-                // onClick={() => onPageChange("Portfolio")}
-                // style={{ color: "yellow" }}
-                id="navbar-item-portfolio"
-                // className={
-                //   currentPage === "Portfolio"
-                //     ? "navbar-item active"
-                //     : "navbar-item"
-                // }
-              >
-                Portfolio
-              </Nav.Link>
-              <Nav.Link
-                href="#resume"
-                // onClick={() => onPageChange("Resume")}
-                id="navbar-item-resume"
-                style={{ textDecoration: "none" }}
-                // className={
-                //   currentPage === "Resume"
-                //     ? "navbar-item active"
-                //     : "navbar-item"
-                // }
-              >
-                Resume
-              </Nav.Link>
-              <Nav.Link
-                href="#contactme"
-                // onClick={() => onPageChange("ContactMe")}
-                id="navbar-item-contactme"
-                style={{ textDecoration: "none" }}
-                // className={
-                //   currentPage === "ContactMe"
-                //     ? "navbar-item active"
-                //     : "navbar-item"
-                // }
-              >
-                Contact Me
-              </Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
+        <Navbar.Brand id="navbar-brand" href="#top" className="p-0 ps-5 m-0">
+          Ariel.
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="ms-auto pe-5">
+            <Nav.Link href="#aboutme" id="navbar-item-aboutme">
+              About Me
+            </Nav.Link>
+            <Nav.Link href="#portfolio" id="navbar-item-portfolio">
+              Portfolio
+            </Nav.Link>
+            <Nav.Link href="#resume" id="navbar-item-resume">
+              Resume
+            </Nav.Link>
+            <Nav.Link href="#contactme" id="navbar-item-contactme">
+              Contact Me
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
       </Navbar>
     </React.Fragment>
   );

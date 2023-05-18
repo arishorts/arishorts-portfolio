@@ -10,21 +10,9 @@
 }
 
 :root {
-  --color-cactus-green: #5e826e;
+  --color-cactus-green: #366856;
   --color-hunt-club: #2a5043;
-  --color-sand: #efd9b4;
-  --color-canyon-red: #d16b5a;
-  --color-sagebrush-green: #a2b57f;
-  --color-adobe-orange: #e37759;
-  --color-renwick-rose-beige: #ae8871;
-  --color-terra-brun: #5d3828;
   --color-turquoise-blue: #5fd8c4;
-  --color-sky-blue: #6bb0e3;
-  --color-sunset-purple: #7d4e5f;
-  --color-copper-orange: #d78f1b;
-  --color-baked-clay: #c2785d;
-  --color-burnt-sienna: #7e462c;
-  --color-camel-tan: #d3b29c;
   --color-ivory-white: #f3ede3;
   --navbar-height: 50px;
 }
@@ -48,7 +36,7 @@ a:hover,
 #navbar-brand {
   text-decoration: "none";
   color: var(--color-ivory-white);
-  font-size: 1.5rem;
+  font-size: 2.1rem;
 }
 
 #navbar-item-aboutme,

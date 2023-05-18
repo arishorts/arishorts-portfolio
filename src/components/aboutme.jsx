@@ -3,7 +3,7 @@ import React from "react";
 
 const AboutMe = () => {
   return (
-    <div className="container-fluid p-5" id="aboutme">
+    <div className="container-fluid p-4 p-sm-5" id="aboutme">
       <h2 className="text-center aboutme-header mt-5 pb-1">
         About <span className="aboutme-span">Me</span>
       </h2>
