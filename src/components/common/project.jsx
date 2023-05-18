@@ -16,13 +16,12 @@ function Project({ name, url, description, image, github }) {
           target="_blank"
           rel="noopener noreferrer"
           className="project-header text-center"
-          style={{ textDecoration: "none" }}
         >
-          <h4>{name}</h4>
+          <h4 className="project-header mt-2">{name}</h4>
         </a>
       </Row>
       <a href={url}>
-        <picture className="row justify-content-center m-2">
+        <picture className="row justify-content-center mx-2 mb-3">
           <img
             alt=""
             srcSet={image}

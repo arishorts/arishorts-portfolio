@@ -28,6 +28,12 @@ a:hover,
   text-decoration: none;
 }
 
+.github-link,
+.project-header {
+  font-size: 1.7rem;
+  text-decoration: none;
+}
+
 .header-container {
   background-color: var(--color-hunt-club);
   z-index: 10;
