@@ -3,17 +3,17 @@ import React from "react";
 
 const AboutMe = () => {
   return (
-    <div className="container-fluid py-5 px-5" id="aboutme">
-      <h2 className="text-center aboutme-header mb-3">
+    <div className="container-fluid p-5" id="aboutme">
+      <h2 className="text-center aboutme-header mt-5 pb-1">
         About <span className="aboutme-span">Me</span>
       </h2>
 
-      <picture className="about-img">
+      <picture className="about-img m-4">
         <img alt="Ariel" srcSet={process.env.PUBLIC_URL + "/headshot.webp"} />
         <span className="circle-spin"></span>
       </picture>
 
-      <section className="fs-5 aboutme-content">
+      <section className="fs-5 px-5 aboutme-content">
         <h2 className="aboutme-header">Hi im Ariel Schwartz</h2>
         <h3>Backend Developer</h3>
         <p className="pt-3">

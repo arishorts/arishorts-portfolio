@@ -31,9 +31,9 @@ class ContactMe extends Form {
   render() {
     return (
       <React.Fragment>
-        <div className="container-fluid contactme-container" id="contactme">
-          <div className="py-5 row justify-content-center">
-            <h2 className="text-center contactme-header mb-3">
+        <div className="container-fluid contactme-container p-5" id="contactme">
+          <div className="row justify-content-center">
+            <h2 className="text-center contactme-header pb-4">
               Contact <span className="contactme-span">Me</span>
             </h2>
             <form

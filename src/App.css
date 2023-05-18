@@ -26,12 +26,12 @@
   --color-burnt-sienna: #7e462c;
   --color-camel-tan: #d3b29c;
   --color-ivory-white: #f3ede3;
+  --navbar-height: 50px;
 }
 
 html {
   background-color: var(--color-hunt-club);
 }
-/* How do i set the negative space to green */
 
 a:hover,
 .downloadLink,
@@ -45,16 +45,26 @@ a:hover,
   z-index: 10;
 }
 
-.header-brand,
-.navbar-item {
+#navbar-brand {
   text-decoration: "none";
   color: var(--color-ivory-white);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
+#navbar-item-aboutme,
+#navbar-item-portfolio,
+#navbar-item-resume,
+#navbar-item-contactme {
+  text-decoration: "none";
+  color: var(--color-ivory-white);
+  font-size: 1rem;
+}
+
+.navbar,
 .main-container,
 .resume-container {
   background-color: var(--color-hunt-club);
+  scroll-margin-top: var(--navbar-height);
 }
 
 .resume-span,
@@ -73,6 +83,7 @@ a:hover,
 #medium,
 #message {
   background-color: var(--color-cactus-green);
+  scroll-margin-top: var(--navbar-height);
 }
 
 .aboutme-header,

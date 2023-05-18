@@ -9,14 +9,12 @@ class Portfolio extends Component {
         name: "Ballot-Box",
         url: "https://fathomless-gorge-67746.herokuapp.com/",
         description:
-          "Join Ballot-Box and make your opinion count! This is a poll application, when opened, the user is presented with options for a poll.After clicking on one of the poll options, poll results appear on the screen in real-time. In addition, the user can create a poll and share the link with others.The user can delete a poll, if they would like.",
+          "Join Ballot-Box and make your opinion count! This is a polling application, when opened, the user is presented with all current polls. After clicking on one of the polls, results will appear on the screen in real-time. In addition, the user can create and and delete a poll if they would like. This app configures a MongoDB database using mongoose to set the schema. Moreover, this app also provides features such as session authentication with cookies and authorization, which ensures that users can securely log in and manage their polls.",
         image: process.env.PUBLIC_URL + "/ballotbox.jpg",
         github: "https://github.com/ttieman/Ballot-Box",
       },
       // {
       //   name: "Blockflix",
-      //   summary: "A web app for tracking and rating movies and TV shows.",
-      //   date: "2021-05-10T20:15:36Z",
       //   url: "https://github.com/arishorts/blockflix",
       //   description:
       //     "Blockflix is a React app that uses the TMDb API to display movies and TV shows. Users can create an account, add movies and shows to their watchlist, and rate and review them.",
@@ -25,7 +23,7 @@ class Portfolio extends Component {
         name: "My Tech Blog",
         url: "https://arishorts-mytechblog.herokuapp.com/",
         description:
-          "This blogging app is a powerful tool for anyone who wants to create and share content on the web. It provides a simple and intuitive interface for users to write and publish blog posts on a variety of topics. The app also allows users to engage with each other through comments and social sharing, making it an ideal platform for building a community around a particular topic or niche.",
+          "This blogging app is a powerful tool for anyone who wants to create and share content on the web. It provides a simple and intuitive interface for users to write and publish blog posts on a variety of topics. The app also allows users to engage with each other through comments and social sharing, making it an ideal platform for building a community around a particular topic or niche. This app also provides features such as session authentication with cookies and authorization, which ensures that users can securely log in and manage their blogposts and comments.",
         image: process.env.PUBLIC_URL + "/mytechblog.jpeg",
         github: "https://github.com/arishorts/my-tech-blog",
       },
@@ -51,20 +49,14 @@ class Portfolio extends Component {
   render() {
     return (
       <React.Fragment>
-        <div
-          id="portfolio"
-          className="px-5 py-5 portfolio-container container-fluid"
-        >
-          <h2 className="portfolio-header pb-2 text-center">
+        <div id="portfolio" className="p-5 portfolio-container container-fluid">
+          <h2 className="portfolio-header text-center">
             My <span className="portfolio-span">Portfolio</span>
           </h2>
 
           <div className="row justify-content-evenly">
             {this.state.repos.map((repo, index) => (
-              <div
-                className="col-12 col-sm-5 col-md-5 col-lg-5 py-2 my-4"
-                key={index}
-              >
+              <div className="col-12 col-md-6 g-5" key={index}>
                 <div
                   className="portfolio-card rounded-4"
                   style={{ height: "100%" }}

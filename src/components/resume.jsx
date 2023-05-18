@@ -47,11 +47,11 @@ class Resume extends Component {
   render() {
     return (
       <React.Fragment>
-        <div id="resume" className="px-5 container-fluid resume-container row">
-          <h2 className="resume-header pt-5 pb-2 text-center">
+        <div id="resume" className="p-5 container-fluid resume-container row">
+          <h2 className="resume-header text-center">
             My <span className="resume-span">Journey</span>
           </h2>
-          <div className="text-center">
+          <div className="text-center pb-4">
             <DownloadLink fileUrl={this.state.resume} />
           </div>
 
