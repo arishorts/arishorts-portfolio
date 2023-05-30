@@ -1,4 +1,5 @@
 import React from "react";
+import emailjs from "@emailjs/browser";
 import Form from "./common/form";
 import Joi from "joi-browser";
 import { getMediums } from "../services/mediumService";
@@ -22,9 +23,25 @@ class ContactMe extends Form {
     this.setState({ mediums: mediums });
   }
 
-  doSubmit = () => {
-    //  saveMovie(this.state.data);
+  doSubmit = (e) => {
+    e.preventDefault();
+    const form = e.target;
 
+    emailjs
+      .sendForm(
+        "service_ur5owwu",
+        "template_35pije9",
+        form,
+        "K4lLI4du2jigc3ksx"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
     window.location.replace("http://localhost:3000/");
   };
 
@@ -37,6 +54,7 @@ class ContactMe extends Form {
               Contact <span className="contactme-span">Me</span>
             </h2>
             <form
+              id="myForm"
               className="col-md-7 col-10 contactme-content"
               onSubmit={this.handleSubmit}
             >

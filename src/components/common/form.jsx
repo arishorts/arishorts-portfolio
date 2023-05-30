@@ -5,6 +5,11 @@ import Select from "./select";
 import TextField from "./textfield";
 
 class Form extends Component {
+  // constructor(props) {
+  //   super(props);
+  //   this.handleSubmit = this.handleSubmit.bind(this);
+  // }
+
   state = {
     data: {},
     errors: {},
@@ -33,7 +38,7 @@ class Form extends Component {
     this.setState({ errors: errors || {} });
     if (errors) return;
 
-    this.doSubmit();
+    this.doSubmit(e);
   };
 
   handleChange = ({ currentTarget: input }) => {
@@ -89,7 +94,7 @@ class Form extends Component {
 
   renderButton = (label, id) => {
     return (
-      <button disabled={this.validate()} className="btn" id={id}>
+      <button type={label} disabled={this.validate()} className="btn" id={id}>
         {label}
       </button>
     );
