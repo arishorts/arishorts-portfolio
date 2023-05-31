@@ -7,6 +7,7 @@ import Resume from "./components/resume";
 import Header from "./components/common/header";
 import Footer from "./components/footer";
 import NavBar from "./components/common/navbar";
+import Home from "./components/home";
 
 function App() {
   // const [currentPage, setCurrentPage] = useState("AboutMe");
@@ -34,6 +35,7 @@ function App() {
         <NavBar />
         {/* <Header currentPage={currentPage} handlePageChange={handlePageChange} /> */}
         {/* {renderPage()} */}
+        <Home />
         <AboutMe />
         <Portfolio />
         <Resume />

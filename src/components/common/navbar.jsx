@@ -16,6 +16,9 @@ const NavBar = ({ currentPage, onPageChange }) => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto pe-5">
+            <Nav.Link href="#home" id="navbar-item-aboutme">
+              Home
+            </Nav.Link>
             <Nav.Link href="#aboutme" id="navbar-item-aboutme">
               About Me
             </Nav.Link>

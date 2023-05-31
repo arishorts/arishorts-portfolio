@@ -7,6 +7,7 @@ const Input = ({ name, label, error, ...rest }) => {
         {label}
       </label>
       <input
+        // style={{ WebkitBoxShadow: "0 0 0 1000px red inset" }}
         {...rest}
         name={name}
         id={name}

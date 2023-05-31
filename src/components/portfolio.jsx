@@ -67,9 +67,9 @@ class Portfolio extends Component {
             My <span className="portfolio-span">Portfolio</span>
           </h2>
 
-          <div className="row justify-content-evenly">
+          <div className="row justify-content-center">
             {this.state.repos.map((repo, index) => (
-              <div className="col-12 col-md-6 g-5" key={index}>
+              <div className="col-12 col-md-5 g-5" key={index}>
                 <div
                   className="portfolio-card rounded-4"
                   style={{ height: "100%" }}

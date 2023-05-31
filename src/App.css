@@ -61,6 +61,8 @@ a:hover,
   scroll-margin-top: var(--navbar-height);
 }
 
+.home-span,
+.home-subheader,
 .resume-span,
 .aboutme-span,
 .portfolio-span,
@@ -70,6 +72,7 @@ a:hover,
   color: var(--color-turquoise-blue);
 }
 
+.home-container,
 .portfolio-container,
 .contactme-container,
 #email,
@@ -80,6 +83,16 @@ a:hover,
   scroll-margin-top: var(--navbar-height);
 }
 
+#name:autofill,
+#email:autofill,
+#name:-webkit-autofill::first-line,
+#email:-webkit-autofill::first-line {
+  color: var(--color-ivory-white) !important;
+  -webkit-box-shadow: 0 0 0px 1000px var(--color-cactus-green) inset;
+}
+
+.home-header,
+.home-content,
 .aboutme-header,
 .aboutme-content,
 .project-header,
@@ -97,6 +110,19 @@ a:hover,
 #medium,
 #message {
   color: var(--color-ivory-white);
+}
+
+.home-header {
+  font-size: 4.5rem;
+  font-weight: 700;
+}
+
+.home-subheader {
+  font-size: 3rem;
+}
+
+.home-content {
+  font-size: 1.7rem;
 }
 
 .project {
@@ -178,6 +204,14 @@ a:hover,
 
 .resumecard-content:hover::before {
   width: 100%;
+}
+
+.home-img img {
+  width: 29rem;
+  height: 40rem;
+  object-position: 100% 25%;
+  object-fit: cover;
+  border: 0.2rem solid var(--color-turquoise-blue);
 }
 
 /* img control */

@@ -1,10 +1,9 @@
 import React from "react";
-// import { motion } from "framer-motion";
 
 const AboutMe = () => {
   return (
     <div className="container-fluid p-4 p-sm-5" id="aboutme">
-      <h2 className="text-center aboutme-header mt-5 pb-1">
+      <h2 className="text-center aboutme-header pb-1 mt-5">
         About <span className="aboutme-span">Me</span>
       </h2>
 
@@ -14,7 +13,6 @@ const AboutMe = () => {
       </picture>
 
       <section className="fs-5 px-5 aboutme-content">
-        <h2 className="aboutme-header">Hi im Ariel Schwartz</h2>
         <h3>Backend Developer</h3>
         <p className="pt-3">
           I have a passion for building beautiful and functional web
