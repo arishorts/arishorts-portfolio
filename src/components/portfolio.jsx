@@ -6,55 +6,66 @@ class Portfolio extends Component {
     resume: process.env.PUBLIC_URL + "/Ariel_Schwartz_Resume.pdf",
     repos: [
       {
-        name: "Ballot-Box",
-        url: "https://fathomless-gorge-67746.herokuapp.com/",
-        description: `Join Ballot-Box and make your opinion count! Users can now view polls and results in real-time, they can also create and and delete a poll if desired. This was a collaborative MVC paradigm project. The Controller is a RESTful API handled with Node.js and Express.js. A View was implemented with Handlebars.js as the templating engine, MySQL with Sequelize ORM for the database Model. Finally, the project was deployed to Heroku to make for a polished, responsive, and interactive user interfaces. Moreover, this app includes features such as session authentication with cookies and authorization, which ensures users can securely log in and manage their polls. An additional goal of this app was to explore ChartJS, a library dedicated to data visualization. Additionally, a presentation was delivered, highlighting the elevator pitch, concept, development process, demo, and directions for future development.`,
-        image: process.env.PUBLIC_URL + "/ballotbox.jpg",
-        github: "https://github.com/ttieman/Ballot-Box",
+        name: "E-Commerce Store",
+        url: "https://arishorts-e-commerce-store.herokuapp.com/",
+        description:
+          "HTML, CSS, Javascript, Node.js, Express, React, React-Router, Redux, Concurrently, Apollo-Server, Bcrypt, GraphQL, MongoDB, Mongoose, Stripe, JSON Webtoken.",
+        image: process.env.PUBLIC_URL + "/ecommerce.jpeg",
+        github: "https://github.com/arishorts/E-Commerce-Store",
       },
-      // {
-      //   name: "Blockflix",
-      //   url: "https://github.com/arishorts/blockflix",
-      //   description:
-      //     "Blockflix is a React app that uses the TMDb API to display movies and TV shows. Users can create an account, add movies and shows to their watchlist, and rate and review them.",
-      // },
+      {
+        name: "Google-Bookstore",
+        url: "https://arishorts-googlebookstore.herokuapp.com/",
+        description:
+          "HTML, CSS, Javascript, Node.js, Express, React, React-Router, React Bootstrap, Concurrently, Apollo-Server, Bcrypt, GraphQL, MongoDB, Mongoose, JSON Webtoken.",
+        image: process.env.PUBLIC_URL + "/bookstore.jpeg",
+        github: "https://github.com/arishorts/googlebookstore",
+      },
       {
         name: "J.A.T.E",
         url: "https://arishorts-jate.herokuapp.com/",
         description:
-          "Just Another Text Editor is a text editor that allows users to create and edit a text file. It has a simple interface and features basic functionality. One unique feature of this text editor is its ability to be installed as a progressive web app (PWA). This app configures a Webpack development environment for a web application called J.A.T.E. It sets up plugins that generate HTML and a manifest file, add CSS loaders and Babel, and inject a custom service worker to cache assets and pages for offline access.",
+          "HTML, CSS, Javascript, Node.js, Express, Progressive Web App (PWA), Concurrently, Babel, CSS-loader, Manifest, and Custom service worker.",
         image: process.env.PUBLIC_URL + "/jate.jpg",
         github: "https://github.com/arishorts/PWA-Text-Editor",
+      },
+      {
+        name: "Ballot-Box",
+        url: "https://fathomless-gorge-67746.herokuapp.com/",
+        description:
+          "HTML, CSS, Javascript, Node.js, Express, Bootstrap, Handlebars, Express-Session, Express-Handlebars, Sequelize, MySQL, Chart.js, Bcrypt.",
+        image: process.env.PUBLIC_URL + "/ballotbox.jpg",
+        github: "https://github.com/arishorts/Ballot-Box",
       },
       {
         name: "Social Network API",
         url: "https://youtu.be/Xvf9rbceKlI",
         description:
-          "This Social Network API taught me skills needed for building a robust social network web application. This project utilized MongoDB as a NoSQL database, which is favored in social network platforms for handling large amounts of unstructured data. Express.js is used for routing and implementing a Mongoose ODM to interact with the MongoDB database. The API has several routes for users and thoughts, including ability to create, update, and delete their own thoughts, as well as react to the thoughts of others. Users also are able to create and delete on their own friend lists, and the API will be able to retrieve data for all users and thoughts, as well as for a single user or thought by its ID. This project showcases my ability to format timestamps and handle data validation using Mongoose's schema settings. A comprehensive walkthrough video has been included that showcases functionality of the API. With this project, I demonstrated skills in building a performant and scalable social network API using NoSQL technologies.",
+          "HTML, CSS, Javascript, Node.js, Express, NoSQL, MongoDB, Mongoose, Joi, Dayjs.",
         image: process.env.PUBLIC_URL + "/socialnetworkapi.jpeg",
         github: "https://github.com/arishorts/social-network-api",
       },
       {
         name: "My Tech Blog",
         url: "https://arishorts-mytechblog.herokuapp.com/",
-        description: `This blogpost application showcases proficiency in several essential skill and is a powerful tool for anyone who wants to create and share content on the web. It provides a simple and intuitive interface for users to write and publish blog posts on a variety of topics. The app also allows users to engage with each other through comments, making it a platform for building a community around a particular topic or niche.  By building a blog site from scratch and deploying it to Heroku, I demonstrated ability to work with the Model-View-Controller (MVC) architectural pattern. Utilizing Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication, this ensures that users can securely log in and manage their blogposts and comments. The application follows best practices for file structure, naming conventions, and coding standards, as reflected in the repository's quality.`,
+        description:
+          "HTML, CSS, Javascript, Node.js, Express, Handlebars.js, MySQL, Sequelize, express-session, Bcrypt, Jest.",
         image: process.env.PUBLIC_URL + "/mytechblog.jpeg",
         github: "https://github.com/arishorts/my-tech-blog",
       },
       {
-        name: "NoteGenius",
-        url: "https://arishorts-notegenius.herokuapp.com/",
-        description:
-          "The Note Taker application allows users to create, save, and view notes. Overall, the application provides users with a simple and intuitive way to take and organize notes. The front end of this application is built using bootstrap-esque css and javascript. The backend is using the Express framework for Node.js, and the frontend is using vanilla JavaScript to interact with the server via RESTful APIs.",
-        image: process.env.PUBLIC_URL + "/notegenius.jpeg",
-        github: "https://github.com/arishorts/NoteGenius",
-      },
-      {
         name: "MealMate",
         url: "https://arishorts.github.io/MealMate2.0/",
-        description: `The MealMate app is a tool for anyone looking to streamline meal planning and tracking their favorite recipes. The app allows you to generate a meal plan, with the option to search for recipes based on ingredients in your kitchen utlizing calls to the Spoonacular API. It also implements Google Maps and Places API to share the closest grocery stores near you. Clicking any recipe will display a detailed information section where you can view important badges, such as "gluten-free" or "vegetarian", and get a closer look at the ingredients and nutritional information. This was a collaborative front-end project that required a CSS framework other than Bootstrap, deployment to GitHub Pages, interactivity with user input, integration of server-side APIs, utilization of client-side storage for persistent data, responsiveness, polished UI design, and adherence to quality coding standards. Additionally, a presentation was delivered, highlighting the elevator pitch, concept, development process, demo, and directions for future development.`,
+        description: `HTML, CSS, Javascript, Tailwind, Spoonacular API, Google Maps and Places API.`,
         image: process.env.PUBLIC_URL + "/mealmate.jpeg",
         github: "https://arishorts.github.io/MealMate2.0/",
+      },
+      {
+        name: "NoteGenius",
+        url: "https://arishorts-notegenius.herokuapp.com/",
+        description: "HTML, CSS, Javascript, Express, Node.js, Joi.",
+        image: process.env.PUBLIC_URL + "/notegenius.jpeg",
+        github: "https://github.com/arishorts/NoteGenius",
       },
     ],
   };
