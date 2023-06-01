@@ -17,7 +17,7 @@ function Project({ name, url, description, image, github }) {
           rel="noopener noreferrer"
           className="project-header text-center"
         >
-          <h4 className="project-header mt-2">{name}</h4>
+          <h4 className="project-header mt-2 mx-5">{name}</h4>
         </a>
       </Row>
       <a href={url}>

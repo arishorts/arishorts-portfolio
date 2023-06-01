@@ -207,25 +207,32 @@ a:hover,
   width: 100%;
 }
 
+/* img control */
+.home-img {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+
 .home-img img {
-  width: 29rem;
-  height: 40rem;
   object-position: 100% 25%;
   object-fit: cover;
   border: 0.2rem solid var(--color-turquoise-blue);
+  max-width: 18rem;
+  height: auto;
 }
 
-/* img control */
 .about-img {
   display: flex;
   justify-content: center;
   position: relative;
   padding: 1rem;
+  max-width: 100%;
 }
 
 .about-img img {
   border-radius: 50%;
-  width: 20rem;
+  max-width: 20rem;
   height: 20rem;
   object-position: 85% 50%;
   object-fit: cover;

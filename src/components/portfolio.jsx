@@ -9,7 +9,7 @@ class Portfolio extends Component {
         name: "E-Commerce Store",
         url: "https://arishorts-e-commerce-store.herokuapp.com/",
         description:
-          "HTML, CSS, Javascript, Node.js, Express, React, React-Router, Redux, Concurrently, Apollo-Server, Bcrypt, GraphQL, MongoDB, Mongoose, Stripe, JSON Webtoken.",
+          "HTML, CSS, Javascript, Node.js, Express, React, React-Router, React-Redux, Concurrently, Apollo-Server, Bcrypt, GraphQL, MongoDB, Mongoose, Stripe, JSON Webtoken.",
         image: process.env.PUBLIC_URL + "/ecommerce.jpeg",
         github: "https://github.com/arishorts/E-Commerce-Store",
       },
@@ -49,7 +49,7 @@ class Portfolio extends Component {
         name: "My Tech Blog",
         url: "https://arishorts-mytechblog.herokuapp.com/",
         description:
-          "HTML, CSS, Javascript, Node.js, Express, Handlebars.js, MySQL, Sequelize, express-session, Bcrypt, Jest.",
+          "HTML, CSS, Javascript, Node.js, Express, Handlebars.js, MySQL, Sequelize, Express-session, Bcrypt, Jest.",
         image: process.env.PUBLIC_URL + "/mytechblog.jpeg",
         github: "https://github.com/arishorts/my-tech-blog",
       },
@@ -73,14 +73,17 @@ class Portfolio extends Component {
   render() {
     return (
       <React.Fragment>
-        <div id="portfolio" className="p-5 portfolio-container container-fluid">
+        <div
+          id="portfolio"
+          className="py-5 portfolio-container container-fluid"
+        >
           <h2 className="portfolio-header text-center">
             My <span className="portfolio-span">Portfolio</span>
           </h2>
 
-          <div className="row justify-content-center">
+          <div className="row justify-content-center px-4">
             {this.state.repos.map((repo, index) => (
-              <div className="col-12 col-md-5 g-5" key={index}>
+              <div className="col-12 col-md-5 col-sm-6 g-5 g-sm-4" key={index}>
                 <div
                   className="portfolio-card rounded-4"
                   style={{ height: "100%" }}
