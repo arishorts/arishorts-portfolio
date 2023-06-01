@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useState } from "react";
+import React from "react";
 import ContactMe from "./components/contactme";
 import Portfolio from "./components/portfolio";
 import AboutMe from "./components/aboutme";
@@ -12,7 +12,6 @@ function App() {
   return (
     <React.Fragment>
       <main className="main-container">
-        <div id="top"></div>
         <NavBar />
         <Home />
         <AboutMe />

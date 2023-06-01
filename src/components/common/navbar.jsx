@@ -5,12 +5,12 @@ const NavBar = () => {
   return (
     <React.Fragment>
       <Navbar className="text-center" collapseOnSelect expand="lg" fixed="top">
-        <Navbar.Brand id="navbar-brand" href="#top" className="p-0 ps-5 mx-0">
+        <Navbar.Brand id="navbar-brand" href="#home" className="p-0 ps-5 mx-0">
           Ariel.
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
-          className="pe-5"
+          className="me-5"
           id="burger"
         />
         <Navbar.Collapse id="responsive-navbar-nav" className="text-center">
