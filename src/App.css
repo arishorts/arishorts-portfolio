@@ -89,6 +89,7 @@ a:hover,
 #email:-webkit-autofill::first-line {
   color: var(--color-ivory-white) !important;
   -webkit-box-shadow: 0 0 0px 1000px var(--color-cactus-green) inset;
+  -webkit-text-fill-color: var(--color-ivory-white);
 }
 
 .home-header,

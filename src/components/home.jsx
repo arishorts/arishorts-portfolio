@@ -14,14 +14,12 @@ const Home = () => {
             </h1>
             <h3 className="home-subheader">Backend Developer</h3>
             <p className="pt-3 home-content">
-              Welcome to my web development portfolio, where I embark on a
-              mission to craft innovative digital experiences through full stack
-              development. With a meticulous eye for detail and a passion for
-              cutting-edge technologies, I strive to create seamless user
-              interfaces, robust back-end systems for dynamic front-end
-              interactions that redefine the online landscape. Join me on this
-              journey as we shape the future of the web, one line of code at a
-              time.
+              Welcome to my web development portfolio, where I share digital
+              creations through full stack development. With an eye for detail
+              and a passion for cutting-edge technologies, I build
+              customer-oriented interfaces with robust back-end systems for
+              dynamic front-end interactions. Join me on this journey as I
+              pursue an enriching career, one line at a time.
             </p>
           </section>
         </div>

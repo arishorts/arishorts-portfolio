@@ -42,7 +42,6 @@ class ContactMe extends Form {
           console.log(error.text);
         }
       );
-    window.location.replace("http://localhost:3000/");
   };
 
   render() {
