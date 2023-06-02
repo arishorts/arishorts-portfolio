@@ -112,6 +112,11 @@ a:hover,
 #message {
   color: var(--color-ivory-white);
 }
+.home-content,
+.aboutme-content {
+  text-align: justify;
+  text-justify: inter-word;
+}
 
 .home-header {
   font-size: 4.5rem;
