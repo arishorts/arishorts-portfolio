@@ -218,15 +218,14 @@ a:hover,
   object-position: 100% 25%;
   object-fit: cover;
   border: 0.2rem solid var(--color-turquoise-blue);
-  max-width: 18rem;
-  height: auto;
+  /* max-width: 18rem;
+  height: auto; */
 }
 
 .about-img {
   display: flex;
   justify-content: center;
   position: relative;
-  padding: 1rem;
   max-width: 100%;
 }
 
@@ -252,6 +251,28 @@ a:hover,
   border-left: 0.2rem solid var(--color-hunt-club);
   border-right: 0.2rem solid var(--color-hunt-club);
   animation: aboutSpinner 8s linear infinite;
+}
+
+@media (max-width: 768px) {
+  .about-img img {
+    max-width: 18rem;
+    height: 18rem;
+  }
+  .circle-spin {
+    max-width: 20rem;
+    height: 20rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-img img {
+    max-width: 14rem;
+    height: 14rem;
+  }
+  .circle-spin {
+    max-width: 15rem;
+    height: 15rem;
+  }
 }
 
 @keyframes aboutSpinner {

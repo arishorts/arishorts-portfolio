@@ -7,12 +7,12 @@ const AboutMe = () => {
         About <span className="aboutme-span">Me</span>
       </h2>
 
-      <picture className="about-img m-4">
+      <picture className="about-img my-4">
         <img alt="Ariel" srcSet={process.env.PUBLIC_URL + "/headshot.webp"} />
         <span className="circle-spin"></span>
       </picture>
 
-      <section className="fs-5 px-5 aboutme-content">
+      <section className="fs-5 px-lg-5 p-2 aboutme-content">
         <h3>Backend Developer</h3>
         <p className="pt-3">
           I have a passion for building beautiful and functional web
