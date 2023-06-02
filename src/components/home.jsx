@@ -10,9 +10,9 @@ const Home = () => {
         <div className="col-12 col-lg-8 d-flex align-items-center pe-sm-5 px-3">
           <section className="ps-sm-5 p-3 pt-5">
             <h1 className="home-header fs-1 fw-bold">
-              Hi, i'm <span className="home-span">Ariel Schwartz</span>
+              Hi, I'm <span className="home-span">Ariel Schwartz</span>
             </h1>
-            <h3 className="home-subheader fs-1 fw-bold">Backend Developer</h3>
+            <h3 className="home-subheader fs-1 fw-bold">Back-end Developer</h3>
             <p className="pt-3 home-content fs-2 fw-bold">
               Welcome to my web development portfolio, where I share digital
               creations through full stack development. With an eye for detail

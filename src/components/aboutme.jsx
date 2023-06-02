@@ -13,7 +13,7 @@ const AboutMe = () => {
       </picture>
 
       <section className="fs-5 px-lg-5 p-2 aboutme-content">
-        <h3>Backend Developer</h3>
+        <h3>Back-end Developer</h3>
         <p className="pt-3">
           I have a passion for building beautiful and functional web
           applications. Welcome to my portfolio! 🚀 I have B.S. in mechanical
