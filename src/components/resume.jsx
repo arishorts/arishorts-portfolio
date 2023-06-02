@@ -49,7 +49,7 @@ class Resume extends Component {
       <React.Fragment>
         <div
           id="resume"
-          className="px-2 py-5 p-sm-5 container-fluid resume-container row"
+          className="px-4 py-5 p-sm-5 container-fluid resume-container row"
         >
           <h2 className="resume-header text-center">
             My <span className="resume-span">Journey</span>
@@ -58,9 +58,9 @@ class Resume extends Component {
             <DownloadLink fileUrl={this.state.resume} />
           </div>
 
-          <div className="col-md-6 resume-majorcolumn">
+          <div className="col-md-6 col-11 resume-majorcolumn">
             <h3 className="text-center resume-subheader">Experience</h3>
-            <div className="row px-5 resume-column">
+            <div className="row px-sm-5 px-4 resume-column">
               {this.state.experience.map((exp, index) => (
                 <ResumeCard
                   key={index}
@@ -72,9 +72,9 @@ class Resume extends Component {
             </div>
           </div>
 
-          <div className="col-md-6 resume-majorcolumn">
+          <div className="col-md-6 col-11 resume-majorcolumn">
             <h3 className="text-center resume-subheader">Education</h3>
-            <div className="row px-5 resume-column">
+            <div className="row px-sm-5 px-4 resume-column">
               {this.state.education.map((edu, index) => (
                 <ResumeCard
                   key={index}

@@ -3,7 +3,7 @@ import React from "react";
 const Home = () => {
   return (
     <div
-      className="container-fluid home-container p-lg-5 px-0 d-flex align-items-center"
+      className="container-fluid home-container p-lg-5 d-flex align-items-center"
       id="home"
     >
       <div className="row mt-5">
