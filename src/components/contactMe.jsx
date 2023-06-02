@@ -54,7 +54,7 @@ class ContactMe extends Form {
             </h2>
             <form
               id="myForm"
-              className="col-md-7 col-10 contactme-content"
+              className="col-md-7 col-sm-10 col-12 contactme-content"
               onSubmit={this.handleSubmit}
             >
               {this.renderInput("name", "Name")}
@@ -66,7 +66,7 @@ class ContactMe extends Form {
               )}
               {this.renderTextField("message", "Message")}
               <div className="text-center">
-                {this.renderButton("Submit", "contactme-button")}
+                {this.renderButton("Send", "contactme-button")}
               </div>
             </form>
           </div>

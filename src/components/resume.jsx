@@ -47,7 +47,10 @@ class Resume extends Component {
   render() {
     return (
       <React.Fragment>
-        <div id="resume" className="p-5 container-fluid resume-container row">
+        <div
+          id="resume"
+          className="px-2 py-5 p-sm-5 container-fluid resume-container row"
+        >
           <h2 className="resume-header text-center">
             My <span className="resume-span">Journey</span>
           </h2>

@@ -112,11 +112,12 @@ a:hover,
 #message {
   color: var(--color-ivory-white);
 }
-.home-content,
+
+/* .home-content,
 .aboutme-content {
   text-align: justify;
   text-justify: inter-word;
-}
+} */
 
 .home-header {
   font-size: 4.5rem;
@@ -168,7 +169,6 @@ a:hover,
 }
 
 /* Resume Behavior */
-
 .resume-column {
   position: relative;
   left: 2.4rem;
@@ -223,8 +223,8 @@ a:hover,
   object-position: 100% 25%;
   object-fit: cover;
   border: 0.2rem solid var(--color-turquoise-blue);
-  /* max-width: 18rem;
-  height: auto; */
+  max-width: 18rem;
+  height: auto;
 }
 
 .about-img {
@@ -259,6 +259,9 @@ a:hover,
 }
 
 @media (max-width: 768px) {
+  .home-img img {
+    max-width: 15rem;
+  }
   .about-img img {
     max-width: 18rem;
     height: 18rem;
@@ -270,6 +273,9 @@ a:hover,
 }
 
 @media (max-width: 480px) {
+  .home-img img {
+    max-width: 13rem;
+  }
   .about-img img {
     max-width: 14rem;
     height: 14rem;

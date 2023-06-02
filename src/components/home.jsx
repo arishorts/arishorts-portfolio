@@ -3,12 +3,12 @@ import React from "react";
 const Home = () => {
   return (
     <div
-      className="container-fluid home-container p-lg-5 p-0 d-flex align-items-center"
+      className="container-fluid home-container p-lg-5 px-0 pt-5 d-flex align-items-center"
       id="home"
     >
       <div className="row mt-5">
         <div className="col-12 col-lg-8 d-flex align-items-center pe-sm-5 px-3">
-          <section className="p-5">
+          <section className="ps-5">
             <h1 className="home-header fs-1 fw-bold">
               Hi, i'm <span className="home-span">Ariel Schwartz</span>
             </h1>
@@ -23,10 +23,10 @@ const Home = () => {
             </p>
           </section>
         </div>
-        <div className="col-12 col-lg-4 px-5  text-center">
+        <div className="col-12 col-lg-4 px-5 d-flex justify-content-center align-items-center text-center">
           <picture className="home-img">
             <img
-              className="my-5 img-fluid"
+              className="mb-5 img-fluid rounded-4"
               alt="Ariel"
               srcSet={process.env.PUBLIC_URL + "/photo.JPG"}
             />
