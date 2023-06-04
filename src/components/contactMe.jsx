@@ -90,10 +90,10 @@ class ContactMe extends Form {
 
         <Modal show={this.state.showModal} onHide={this.closeModal}>
           <Modal.Header closeButton>
-            <Modal.Title>Form Submitted</Modal.Title>
+            <Modal.Title>Success</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            Thank you for submitting the form. We will get back to you soon.
+            Thank you for contacting me. I will get back to you soon.
           </Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={this.closeModal}>
