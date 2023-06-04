@@ -1,4 +1,6 @@
 import React from "react";
+import Modal from "react-bootstrap/Modal";
+import Button from "react-bootstrap/Button";
 import emailjs from "@emailjs/browser";
 import Form from "./common/form";
 import Joi from "joi-browser";
@@ -9,6 +11,7 @@ class ContactMe extends Form {
     data: { message: "", medium: "", name: "", email: "" },
     errors: {},
     mediums: [],
+    showModal: false,
   };
 
   schema = {
@@ -22,6 +25,17 @@ class ContactMe extends Form {
     const mediums = getMediums();
     this.setState({ mediums: mediums });
   }
+
+  resetForm = () => {
+    this.setState({
+      data: { message: "", medium: "", name: "", email: "" },
+      errors: {},
+    });
+  };
+
+  closeModal = () => {
+    this.setState({ showModal: false });
+  };
 
   doSubmit = (e) => {
     e.preventDefault();
@@ -37,6 +51,8 @@ class ContactMe extends Form {
       .then(
         (result) => {
           console.log(result.text);
+          this.resetForm();
+          this.setState({ showModal: true });
         },
         (error) => {
           console.log(error.text);
@@ -71,6 +87,20 @@ class ContactMe extends Form {
             </form>
           </div>
         </div>
+
+        <Modal show={this.state.showModal} onHide={this.closeModal}>
+          <Modal.Header closeButton>
+            <Modal.Title>Form Submitted</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            Thank you for submitting the form. We will get back to you soon.
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={this.closeModal}>
+              Close
+            </Button>
+          </Modal.Footer>
+        </Modal>
       </React.Fragment>
     );
   }
