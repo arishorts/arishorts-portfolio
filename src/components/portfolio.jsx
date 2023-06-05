@@ -63,7 +63,7 @@ class Portfolio extends Component {
       {
         name: "NoteGenius",
         url: "https://arishorts-notegenius.herokuapp.com/",
-        description: "HTML, CSS, Javascript, Express, Node.js, Joi.",
+        description: "HTML, CSS, Javascript, Express, Node.js, Joi, Heroku.",
         image: process.env.PUBLIC_URL + "/notegenius.jpeg",
         github: "https://github.com/arishorts/NoteGenius",
       },

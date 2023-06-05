@@ -12,7 +12,9 @@ const Home = () => {
             <h1 className="home-header fs-1 fw-bold">
               Hi, I'm <span className="home-span">Ariel Schwartz</span>
             </h1>
-            <h3 className="home-subheader fs-1 fw-bold">Back-end Developer</h3>
+            <h3 className="home-subheader fs-1 fw-bold">
+              Full Stack Developer
+            </h3>
             <p className="pt-3 home-content fs-2 fw-bold">
               Welcome to my web development portfolio, where I share digital
               creations through full stack development. With an eye for detail
