@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/arishorts-portfolio/static/css/main.a71743ce.css",
-    "main.js": "/arishorts-portfolio/static/js/main.27d39367.js",
+    "main.js": "/arishorts-portfolio/static/js/main.155f2f6b.js",
     "static/js/787.b19e2c4d.chunk.js": "/arishorts-portfolio/static/js/787.b19e2c4d.chunk.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/arishorts-portfolio/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/fontawesome-webfont.eot": "/arishorts-portfolio/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
@@ -10,11 +10,11 @@
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/arishorts-portfolio/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "index.html": "/arishorts-portfolio/index.html",
     "main.a71743ce.css.map": "/arishorts-portfolio/static/css/main.a71743ce.css.map",
-    "main.27d39367.js.map": "/arishorts-portfolio/static/js/main.27d39367.js.map",
+    "main.155f2f6b.js.map": "/arishorts-portfolio/static/js/main.155f2f6b.js.map",
     "787.b19e2c4d.chunk.js.map": "/arishorts-portfolio/static/js/787.b19e2c4d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a71743ce.css",
-    "static/js/main.27d39367.js"
+    "static/js/main.155f2f6b.js"
   ]
 }
