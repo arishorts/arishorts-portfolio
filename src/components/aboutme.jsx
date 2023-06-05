@@ -15,22 +15,30 @@ const AboutMe = () => {
       <section className="fs-5 px-lg-5 p-2 aboutme-content">
         <h3>Full Stack Developer</h3>
         <p className="pt-3">
-          I have a passion for building beautiful and functional web
-          applications. Welcome to my portfolio! 🚀 I have B.S. in mechanical
-          engineering from the University of Arizona (ABET) with a minor in
-          mathematics. I have found demonstrating engineering rigor to be
-          rewarding and aim to challenge myself with a new career and technical
-          industry innovation. With a strong analytical background, 7+ years of
-          industry experience using Mechanical Engineering, a certification in
-          Full Stack including skills in Agile Software Development, I build
-          client-based solutions.
+          As a recent graduate and long-time admirer of the web development
+          field, I am thrilled to pursue open position for a Full Stack
+          Developer or related roles. At present I am employed with Raytheon
+          Technologies, thus, I feel that my relevant technology industry
+          experience would be of great value to any technologically oriented
+          company. I am proud of my 3.6 GPA B.S. in Mechanical Engineering as
+          well as 7 years of real world experience, and have found this
+          rewarding – however, not the correct fit. Having spent countless hours
+          tinkering on my own projects and completing a certificate, my aim is
+          to continue challenging myself in a professional full stack position.
         </p>
         <p>
-          I’ve had the opportunity to work on a number of incredible projects
-          that have allowed me to grow and establish myself within this
-          competitive industry. I hope you’ll enjoy viewing my projects as much
-          as I enjoyed working on them. Don’t hesitate to reach out to
-          arieljschwartz@gmail.com if you have any questions.
+          I’ve had the opportunity to work on a number of web-based
+          client-server applications that have allowed me to grow and establish
+          within this competitive industry. Within these solo and team projects
+          I've deployed intuitive front-end interfaces, with robust back-ends
+          utilizing performance optimization strategies. My experience is
+          supplemented by modern best practices in Agile/Scrum methodology. I
+          believe these skills would be an asset to any company and hope you’ll
+          enjoy viewing my projects as much as I enjoyed working on them.
+        </p>
+        <p>
+          I am enthusiastic of the possibility of discussing how my skills and
+          experiences align with your needs and goals.
         </p>
       </section>
     </div>
