@@ -13,18 +13,17 @@ const AboutMe = () => {
       </picture>
 
       <section className="fs-5 px-lg-5 p-2 aboutme-content">
-        <h3>Full Stack Developer</h3>
         <p className="pt-3">
           As a recent graduate and long-time admirer of the web development
-          field, I am thrilled to pursue open position for a Full Stack
-          Developer or related roles. At present I am employed with Raytheon
-          Technologies, thus, I feel that my relevant technology industry
-          experience would be of great value to any technologically oriented
-          company. I am proud of my 3.6 GPA B.S. in Mechanical Engineering as
-          well as 7 years of real world experience, and have found this
-          rewarding – however, not the correct fit. Having spent countless hours
-          tinkering on my own projects and completing a certificate, my aim is
-          to continue challenging myself in a professional full stack position.
+          field, I am thrilled to pursue open positions for a Backend Developer
+          or related roles. At present I am employed with Raytheon Technologies,
+          thus, I feel that my relevant technology industry experience would be
+          of great value to any technologically oriented company. I am proud of
+          my 3.6 GPA B.S. in Mechanical Engineering as well as 7 years of real
+          world experience, and have found this rewarding – however, not the
+          correct fit. Having spent countless hours tinkering on my own projects
+          and completing a certificate, my aim is to continue challenging myself
+          in a professional full stack position.
         </p>
         <p>
           I’ve had the opportunity to work on a number of web-based
