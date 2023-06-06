@@ -23,7 +23,7 @@ const AboutMe = () => {
           world experience, and have found this rewarding – however, not the
           correct fit. Having spent countless hours tinkering on my own projects
           and completing a certificate, my aim is to continue challenging myself
-          in a professional full stack position.
+          in a professional web development position.
         </p>
         <p>
           I’ve had the opportunity to work on a number of web-based
